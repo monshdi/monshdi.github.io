@@ -1,0 +1,387 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	font-family: "BebasRegular", sans-serif;
+}
+.hidden {
+	display: none;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+}
+header{
+	position: relative;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	top: 0;
+	left: 0;
+	height: 810px;
+	width: 100%;
+}
+section{
+	position: relative;
+	width: 100%;
+}
+a{
+	color: #fff;
+}
+
+.top_mnu a{
+	float: left;
+	display: block;
+	margin-left: 40px;
+	color: #03776b;
+	font-family: "BebasBold";
+	font-size: 26px;
+	text-transform: uppercase;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+.top_mnu_button{
+	background-color: transparent;
+	border: medium none;
+	font-size: 24px;
+}
+.top_mnu_button{
+	color: #fff;
+	padding: 9px 15px 0;
+}
+.top_line_bg{
+	top: 55px;
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: #cccccc;
+	opacity: .7;
+}
+.top_line{
+	padding-top: 20px;
+	position: relative;
+}
+.top_logo_md{
+	position: relative;
+	text-align: center;
+	padding-bottom: 15px;
+	z-index: 100;
+}
+.bg_logo{
+	position: absolute;
+	top: -40px;
+	left: -10px;
+	width: 400px;
+	height: 220px;
+	background-color: #b4b4b4;
+	border-radius: 20px;
+	opacity: 0.6;
+}
+.top_mnu{
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+}
+.top_mnu ul li{
+	display: inline-block;
+}
+.top_mnu a:hover{
+	color: #d92a3e;
+}
+.top_mnu a:active{
+	color: #8e1b28;
+}
+.top_adr{
+	position: relative;
+	padding-top: 50px;
+	background-image: url(../img/geo.png);
+	background-repeat: no-repeat;
+	background-position: 48px 60px;
+	font-family: "BebasBold";
+	text-align: center;
+	line-height: .9;
+}
+.top_adr p{
+	display: block;
+	color: #03776b;
+	font-size: 18px;
+}
+.top_usl{
+	padding-top: 20px;
+	font-family: "BebasBold", sans-serif;
+	text-transform: none;
+	text-align: justify;
+}
+.top_usl li{
+	font-size: 24px;
+}
+.slider_container{
+	position: relative;
+	padding-bottom: 20px;
+}
+.slider_container img{
+	width: 100%;
+	height: auto;
+}
+.owl-carousel .descr_sl_bg{
+	background-color: #000;
+	opacity: .8;
+	position: absolute;
+	bottom: 80px;
+	width: 100%;
+	height: 60px;
+	float: left;
+	color: #000;
+	text-align: center;
+	z-index: 9;
+}
+
+.descr_sl h1{
+	right: 40px;
+	color: #fff;
+	bottom: 74px;
+	z-index: 10;
+	position: absolute;
+	opacity: 1;
+	font-size: 26px;
+}
+
+.button{
+	font-family: "BebasBold";
+	background-color: #00dba7;
+	border-radius:20px;
+	display: inline-block;
+	height: 40px;
+	line-height: 45px;
+	vertical-align: middle;
+	padding: 0 80px;
+	font-size:25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.button:hover {
+	background-color: #d92a3e;
+}
+.button:active{
+	background-color: #8e1b28;
+}
+.top_button{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.top_info{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: #6f6868;
+	font-family: "BebasBold";
+	line-height: 30px;
+	text-align: justify;
+	color: #fff;
+	padding-top: 20px;
+	font-size: 28px;
+}
+.top_info strong{
+	font-size: 60px;
+	color: #00dba7;
+}
+section .ab_me{
+	height: 100%;
+	position: relative;
+	background-image: url(../img/bg_ab_me.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: "BebasRegular", ;
+}
+.ab_me_txt h1{
+	font-size: 28px;
+}
+.ab_me_txt{
+	margin-top: 50px;
+	font-size:26px;;
+	z-index: 10;
+	text-align: center
+}
+.mid_button{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.photo_block{
+	position: relative;
+	height: auto;
+	background-image: url(../img/pb_bg.jpg);
+}
+.port_descr{
+	text-align: center;
+	color: #000;
+	font-size: 26px;
+}
+.portfolio ul,
+.portfolio ul{
+	margin-top: 40px;
+	padding: 0;
+	list-style-type: none;
+}
+.portfolio li,
+.portfolio_small li{
+	position: relative;
+	margin: 15px 0 20px;
+	display: inline-block;
+	width: 282px;
+}
+.portfolio img{
+	height: 220px;
+	max-width: 100%;
+	display: block;
+}
+.descr{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	text-align: center;
+	color: #fff;
+	padding-top: 80px;
+	font-size: 20px;
+	opacity: 0;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.descr p{
+	font-size: 16px;
+	font-family: "BebasRegular";
+	margin-bottom: -10px;
+
+}
+.descr a{
+	color: #03776b;
+	border: #03776b 2px solid;
+	padding: 2px 5px 5px;
+}
+.descr a:hover {
+	border: #d92a3e 3px solid;
+	color: #d92a3e;
+}
+.portfolio li:hover .descr{
+	opacity: 1;
+
+}
+
+.contacts{
+	position: relative;
+	height: auto;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	line-height: .2;
+}
+.contacts strong{
+	margin-top: 20px;
+	font-size: 26px;
+}
+.contacts p{
+	font-size: 24px;
+}
+.contacts h3{
+	font-size: 20px;
+}
+.contacts img{
+	margin: 15px;
+	height: 200px;
+	width: 200px;
+}
+footer {
+	height: 100px;
+	background-color: #e8e8e8
+}
+.foot_button{
+	text-align: center;
+}
+.footer_logo{
+	padding-top: 5px;
+	text-align: center;
+}
+.footer_mnu{
+	padding-top: 18px;
+}
+footer .footer_mnu .small_mnu a{
+	font-size: 16px;
+}
+.l_mnu{
+	float: left;
+}
+.footer_mnu li{
+	display: inline-block;
+	list-style-type: none;
+}
+.footer_mnu a{
+	margin-left: 30px;
+	color: #03776b;
+	font-family: "BebasBold";
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.footer_mnu a:hover {
+	color: #d92a3e;
+}
+.footer_mnu a:active{
+	color: #8e1b28;
+}
+.pop_form{
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+}
+.pop_form select{
+	width: 90%;
+}
+.pop_form input[type=text]{
+	display: block;
+	line-height: 24px;
+	margin: 20px 25px 12px;
+	width: 90%;
+
+}
+.pop_button{
+	font-size: 20px;
+	color: #00dba7;
+	border: #00dba7 2px solid;
+	padding: 2px 5px 5px;
+}
+.pop_button:hover {
+	border: #d92a3e 3px solid;
+	color: #d92a3e;
+}
