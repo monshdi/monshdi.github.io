@@ -107,7 +107,7 @@
 		margin-top: -26px;
 	}
 	.descr_num{
-		margin-top: 50px;
+		margin-top: 46px;
 	}
 	form{
 		margin: auto;
@@ -118,6 +118,12 @@
 	.tarrif_wrap{
 		font-size: 1.4em;
 		margin-left: 9%;
+	}
+		.right_wrap{
+		font-size: 10em;
+	}
+	.left_wrap_sm{
+		font-size: 6em;	
 	}
 }
 
@@ -149,7 +155,7 @@
 		margin-top: -26px;
 	}
 	.descr_num{
-		margin-top: 50px;
+		margin-top: 44px;
 	}
 	form{
 		width: 100%;
