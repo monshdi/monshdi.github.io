@@ -62,8 +62,12 @@ if(screen.width> 128){
 	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
 	owl.owlCarousel({
+		loop : true,
+		margin : 10,
 		items : 1,
-		autoHeight : true
+		autoPlay : 5000,
+		autoHeight : true,
+		singleItem : true
 	});
 	$(".next_button").click(function() {
 		owl.trigger("owl.next");

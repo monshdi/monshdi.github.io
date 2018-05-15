@@ -2,7 +2,14 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.head_text{
+		font-size: 0.8em;
+		width: 80%;
+		text-align: justify;
+	}
+	.about{
+		font-size: 0.8em;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -11,31 +18,161 @@
 		width: 300px;
 	}
 	.sel_buttons{
-	margin-left: 32px;
+		margin-left: 32px;
 	}
 	.right_wrap{
 		text-align: center;
 		font-size: 18em;
 	}
+	.left_wrap_sm{
+		text-align: center;
+	}
 	.left_about,
 	.right_about{
 		background-color: rgba(255,255,255,.3);
+	}
+	.button_pop{
+		padding: 4px 60px;
 	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+	.head_text{
+		font-size: 0.6em;
+		width: 80%;
+		text-align: justify;
+	}
+	.button{
+		padding: 4px 60px;
+	}
+	.button:hover{
+	color: #782BAB;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 4px 60px;
+}
+	.top_logo::before,
+	.top_logo::after{
+		display: none;
+	}
+	.button_bl{
+		padding: 4px 48px;
+	}
+	.template_item img{
+		width: 222px;
+	}
+	form{
+		font-size: .8em;
+	}
+
+	.button_pop{
+		padding: 4px 40px;
+	}
+	.numb{
+		font-size: 8em;
+		margin-top: -26px;
+	}
+	.descr_num{
+		margin-top: 80px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.head_text{
+		font-size: 0.6em;
+	}
+	.about{
+		font-size: 0.7em;
+	}
+	.button{
+		padding: 4px 40px;
+	}
+	.button:hover{
+		padding: 4px 60px;
+	}
+	.template_site{
+		font-size: .7em;
+	}
+	.template_item img{
+		width: 100%;
+	}
+	.tarrif{
+		font-size: .8em;
+	}
+	.numb{
+		font-size: 8em;
+		margin-top: -26px;
+	}
+	.descr_num{
+		margin-top: 50px;
+	}
+	form{
+		margin: auto;
+	}
+	.headname_wrap{
+		font-size: .7em;
+	}
+	.tarrif_wrap{
+		font-size: 1.4em;
+		margin-left: 9%;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.head_text{
+		font-size: 0.5em;
+	}
+	.about{
+		font-size: 0.7em;
+	}
+	.button{
+		padding: 4px 40px;
+	}
+	.button:hover{
+		padding: 4px 60px;
+	}
+	.template_site{
+		font-size: .7em;
+	}
+	.template_item img{
+		width: 100%;
+	}
+	.tarrif{
+		font-size: .8em;
+	}
+	.numb{
+		font-size: 8em;
+		margin-top: -26px;
+	}
+	.descr_num{
+		margin-top: 50px;
+	}
+	form{
+		width: 100%;
+	}
+	.button_pop{
+		font-size: .8em;
+	}
+	.headname_wrap{
+		font-size: .5em;
+	}
+	.tarrif_wrap{
+		font-size: 1.4em;
+		margin-left: 9%;
+	}
+	.right_wrap{
+		font-size: 10em;
+	}
+	.left_wrap_sm{
+		font-size: 6em;	
+	}
+	.tarrif_wrap{
+		width: 400px;
+	}
 
 }
 
