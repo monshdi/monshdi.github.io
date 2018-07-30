@@ -23,6 +23,27 @@ $(function() {
     }
 })
 
+$('.callback').magnificPopup({
+   type: 'inline',
+   focus: '#name'
+});
+
+  function heightDetect() {
+        $(".main_head").css("height", $(window).height());
+    };
+    heightDetect();
+    $(window).resize(function() {
+        heightDetect();
+    });
+
+$(".top_navigation ul a").mPageScroll2id();
+$(".btn_scroll").mPageScroll2id();
+
+$(".portfolio_item").each(function(i) {
+        $(this).find("a").attr("href", "#work_" + i);
+        $(this).find(".podrt_descr").attr("id", "work_" + i);
+    });
+
 
 
 });
