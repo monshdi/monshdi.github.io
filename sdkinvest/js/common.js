@@ -7,8 +7,6 @@ $(function() {
     margin:10,
     items:1,
     autoplay:true,
-    nav:true,
-    navText:["Предыдущая", "Следующая"],
     responsiveClass:true,
     responsive:{
         0:{
@@ -22,6 +20,17 @@ $(function() {
         }
     }
 })
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('.upbutton').is(':hidden')) {
+                $('.upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('.upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('.upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 900);
+    });
 
 $(".fancybox").fancybox();
 
