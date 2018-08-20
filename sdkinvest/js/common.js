@@ -23,10 +23,8 @@ $(function() {
     }
 })
 
-$('.callback').magnificPopup({
-   type: 'inline',
-   focus: '#name'
-});
+$(".fancybox").fancybox();
+
 
   function heightDetect() {
         $(".main_head").css("height", $(window).height());
