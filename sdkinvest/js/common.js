@@ -29,7 +29,7 @@ $(function() {
         } else { $('.upbutton').stop(true, false).fadeOut('fast'); }
     });
     $('.upbutton').click(function() {
-        $('html, body').stop().animate({scrollTop : 0}, 900);
+        $('html, body').stop().animate({scrollTop : 0}, 800);
     });
 
 $(".fancybox").fancybox();
