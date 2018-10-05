@@ -2375,11 +2375,30 @@ strong {
     font-weight: bold;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px 0; }
+    padding: 40px; }
+
+.head_section {
+  padding: 30px 0;
+  text-align: center; }
+  .head_section h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14rem; }
+  .head_section_item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
 
 .about_me_stage {
   margin-top: 140px;
-  margin-bottom: 280px;
+  margin-bottom: 10px;
   width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2392,16 +2411,16 @@ strong {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.stage {
-  position: relative; }
-  .stage span {
+  .about_me_stage span {
     position: absolute;
     font-size: 8em;
     font-weight: bold;
     top: -80px;
     left: 120px;
     color: #818181; }
+
+.stage {
+  position: relative; }
   .stage strong {
     text-transform: uppercase;
     font-size: 1.3rem; }
@@ -2424,14 +2443,30 @@ strong {
   -webkit-border-radius: 10px;
           border-radius: 10px; }
 
-.head_next_block {
-  position: absolute;
-  bottom: -120px; }
-  .head_next_block span {
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24rem; }
+.section_name {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 4rem; }
+
+.working {
+  padding: 80px 0; }
+
+.bot_section {
+  background-color: #f4ea39; }
+  .bot_section .head_next_block {
+    display: table-cell;
+    vertical-align: bottom; }
+    .bot_section .head_next_block p {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 0; }
+
+.items img {
+  width: 280px; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
