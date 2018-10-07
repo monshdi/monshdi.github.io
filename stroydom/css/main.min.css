@@ -2567,23 +2567,143 @@ strong {
   padding: 80px 0;
   margin-top: -10px; }
 
-.photo-bg {
+.object_descr {
+  position: absolute;
+  line-height: .4;
+  color: #000; }
+
+.photo-bg-left {
   width: 400px;
   height: 280px;
-  background-color: black; }
+  background: url(../img/1.jpg) no-repeat 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+          box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
+  margin: 40px;
+  float: right;
+  z-index: 10; }
+  .photo-bg-left::after {
+    content: '';
+    position: absolute;
+    top: -26%;
+    left: -16%;
+    width: 80%;
+    height: 20%;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff; }
+  .photo-bg-left::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -16%;
+    width: 80%;
+    height: 50%;
+    border-left: 3px solid #fff; }
+  .photo-bg-left .object_descr {
+    left: -140px;
+    top: 44%;
+    text-align: right; }
 
-.photo-sm {
+.photo-sm-left {
   width: 240px;
   height: 180px;
-  background-color: black; }
-
-.left-ph {
+  background: url(../img/1.jpg) no-repeat 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+          box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
   margin: 40px;
   float: right; }
+  .photo-sm-left::after {
+    content: '';
+    position: absolute;
+    top: -26%;
+    left: -28%;
+    width: 88%;
+    height: 20%;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff; }
+  .photo-sm-left::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -28%;
+    width: 88%;
+    height: 46%;
+    border-left: 3px solid #fff; }
+  .photo-sm-left .object_descr {
+    left: -140px;
+    top: 44%;
+    text-align: right; }
 
-.right-ph {
+.photo-bg-right {
+  width: 400px;
+  height: 280px;
+  background: url(../img/1.jpg) no-repeat 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+          box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
   margin: 40px;
   float: left; }
+  .photo-bg-right::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -16%;
+    width: 80%;
+    height: 16%;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff; }
+  .photo-bg-right::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -16%;
+    height: 50%;
+    border-left: 3px solid #fff; }
+  .photo-bg-right .object_descr {
+    right: -140px;
+    top: 44%; }
+
+.photo-sm-right {
+  width: 240px;
+  height: 180px;
+  background: url(../img/1.jpg) no-repeat 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+          box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
+  margin: 40px;
+  float: left; }
+  .photo-sm-right::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -28%;
+    width: 80%;
+    height: 16%;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff; }
+  .photo-sm-right::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -28%;
+    height: 46%;
+    border-left: 3px solid #fff; }
+  .photo-sm-right .object_descr {
+    right: -140px;
+    top: 44%; }
 
 .about_me {
   position: relative;
@@ -2604,7 +2724,8 @@ strong {
   .head_section h2 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14rem; }
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 10rem; }
   .head_section_item {
     display: -webkit-flex;
     display: -moz-flex;
@@ -2736,7 +2857,9 @@ strong {
   background-color: #f4ea39; }
   .bot_section .head_next_block {
     display: inline-block;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    text-align: center;
+    width: 100%; }
     .bot_section .head_next_block p {
       text-transform: uppercase;
       color: #fff;
