@@ -2481,6 +2481,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
+  background: url(../img/text-bg.png) no-repeat -50px -60px / contain;
   font-family: "arial-stroy", sans-serif;
   overflow-x: hidden;
   color: #333; }
@@ -2798,10 +2799,7 @@ strong {
     top: -80px;
     left: 120px;
     color: #818181;
-    animation: number 2s linear;
-    -webkit-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both }
+    animation: number 8s infinite linear;}
   .anim{
   position: absolute;
     font-size: 8em;
@@ -2809,12 +2807,13 @@ strong {
     top: -80px;
     left: 120px;
     color: #f4ea39;}
-  .anim2{animation-delay: 2s;}
-  .anim3{animation-delay: 4s;}
+  .anim1{animation-delay: 2s;}
+  .anim2{animation-delay: 4s;}
+  .anim3{animation-delay: 6s;}
 
 @keyframes number{
-  from{color: #818181;}
-  to{color: #f4ea39;}
+  10%{color: #f4ea39;}
+  100%{color: #f4ea39;}
 }
 
 .stage {
@@ -2842,10 +2841,7 @@ strong {
   margin-top: 80px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  animation: plank 2s linear;
-  -webkit-animation-fill-mode: both;
-   -o-animation-fill-mode: both;
-   animation-fill-mode: both; }
+  animation: plank 8s infinite linear;}
 
 .plank2::after{
   animation-delay: 2s;
@@ -2855,15 +2851,9 @@ strong {
 }
 
 @keyframes plank {
-  10%{width: 10px;}
-  20%{width: 26px;}
-  30%{width: 42px;}
-  40%{width: 58px;}
-  50%{width: 74px;}
-  60%{width: 80px;}
-  70%{width: 96px;}
-  80%{width: 112px;}
-  90%{width: 128px;}
+  0%{width: 0px;}
+  30%{width: 140px;}
+  50%{width: 140px;}
   100%{width: 140px;}
 }
 
