@@ -13,6 +13,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
 
 </head>
 
@@ -50,24 +51,24 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="photo-bg-left"><div class="object_descr">
+							<div class="photo-bg-left"><a href="img/1.jpg" data-fancybox></a><div class="object_descr">
 								<p>Город</p>
 								<p>Что делали</p>
 								<p>Дата</p>
 							</div></div>
-							<div class="photo-sm-left"><div class="object_descr">
+							<div class="photo-sm-left"><a href="img/1.jpg" data-fancybox></a><div class="object_descr">
 								<p>Город</p>
 								<p>Что делали</p>
 								<p>Дата</p>
 							</div></div>
 						</div>
 						<div class="col-md-6">
-							<div class="photo-sm-right"><div class="object_descr">
+							<div class="photo-sm-right"><a href="img/1.jpg" data-fancybox></a><div class="object_descr">
 								<p>Город</p>
 								<p>Что делали</p>
 								<p>Дата</p>
 							</div></div>
-							<div class="photo-bg-right"><div class="object_descr">
+							<div class="photo-bg-right"><a href="img/1.jpg" data-fancybox></a><div class="object_descr">
 								<p>Город</p>
 								<p>Что делали</p>
 								<p>Дата</p>
@@ -97,15 +98,15 @@
 							<div class="stage-round plank"></div>
 						</div>
 						<div class="stage">
-							<span class="anim1">2</span>
+							<span class="numb-anim1">2</span>
 							<div class="stage-round plank2"></div>
 						</div>
 						<div class="stage">
-							<span class="anim2">3</span>
+							<span class="numb-anim2">3</span>
 							<div class="stage-round plank3"></div>
 						</div>
 						<div class="stage">
-							<span class="anim3">4</span>
+							<span class="numb-anim3">4</span>
 							<div class="stage-round"></div>
 						</div>
 					</div>
@@ -161,8 +162,12 @@
 					<div class="col-md-6">
 						<div class="price_block">
 							<h2>Прайс лист *</h2>
-							<button class="btn_form">онлайн</button>
-							<button class="btn_form">скачать файл <b>.xls</b></button>
+							<div class="btn_price">
+								<a href="price.html">онлайн</a>
+							</div>
+							<div class="btn_price">
+								<a href="#">скачать файл <b>.xls</b></a>
+							</div>
 							<p>* Для более точного расчета свяжитесь с нами.</p>
 						</div>
 					</div>
@@ -237,6 +242,7 @@
 
 	<script src="js/scripts.min.js"></script>
 	<script src="libs/scrolltoid/scrolltoid.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
 
 </body>
 </html>
