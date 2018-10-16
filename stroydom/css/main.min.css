@@ -3051,4 +3051,44 @@ strong {
     font-weight: 600; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  .main-head {
+    -webkit-background-size: 60% 60%;
+            background-size: 60%; }
+  .section_name h2 {
+    font-size: 4rem; }
+  .head_section h2 {
+    font-size: 4rem; }
+  .items img {
+    width: 200px; }
+  .price_block p {
+    font-size: 1.6rem; }
+  .bot_section .head_next_block p {
+    font-size: 18rem; }
+  .comments_block_slider_items img {
+    width: 200px; }
+  .comments_block_slider_items em {
+    font-size: 1.4rem; }
+  .comments_block_slider_items p {
+    font-size: 1.2rem; } }
+
+@media (max-width: 767.98px) {
+  .bot_section .head_next_block p {
+    font-size: 14rem; }
+  .comments_block_slider_items em {
+    font-size: 1.4rem; }
+  .comments_block_slider_items p {
+    right: 950px;
+    text-align: left;
+    line-height: 1;
+    font-size: 1.2rem; }
+  .main_foot .social_block {
+    border-right: none; } }
+
+@media (max-width: 575.98px) {
+  .main_head {
+    -webkit-background-size: 60% 60%;
+            background-size: 60%; }
+  .social_block {
+    border-right: none; } }
 /*==========  Mobile First  ==========*/
