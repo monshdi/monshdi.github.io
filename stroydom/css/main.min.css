@@ -2718,6 +2718,7 @@ strong {
 .about_me {
   position: relative;
   padding-top: 80px;
+  padding-bottom: 0;
   background: url(../img/stone-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -2747,7 +2748,7 @@ strong {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    margin-bottom: 6px; }
+    margin-bottom:-8px; }
   .head_section_descr {
     text-transform: uppercase;
     font-weight: bold;
@@ -2761,8 +2762,7 @@ strong {
     margin-top: -15px;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
-    background-color: #f4ea39; }
+            justify-content: space-around;}
 
 .items {
   z-index: 1000; }
@@ -2849,23 +2849,31 @@ strong {
 .stage-round {
   width: 160px;
   height: 160px;
-  background-color: #fff;
+}
+.phone{
+  background: url(../img/phone.png) no-repeat center center / 60%;
+   background-color: #fff;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
-.stage-round i{
-  position: absolute;
-  font-size: 8rem;
-  top: 35px;
-  left: 44px;
+          border-radius: 50%; 
 }
-.plank2 i{
-  top: 44px;
+.work_end{
+  background: url(../img/work-end.png) no-repeat center center / 60%;
+   background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; 
 }
-.plank::after,
-.plank2::after,
-.plank3::after {
-  
- }
+.builder{
+  background: url(../img/builder.png) no-repeat center center / 60%;
+   background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; 
+}
+.home{
+  background: url(../img/home.png) no-repeat center center / 60%;
+   background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; 
+}
 .plank-anim:after{
   position: absolute;
   content: '';
@@ -2923,19 +2931,31 @@ strong {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: space-around;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.6); }
   .about_me_descr p {
+    font-size: 1.6rem;
+    text-align: center;
     font-weight: 600;
+    padding-left: 40px;
+    padding-right: 40px;
     text-transform: uppercase; }
-
+.about_me_descr p:nth-of-type(2){
+  padding-right: 60px;
+}
+.about_me_descr p:nth-of-type(3){
+  padding-right: 80px;
+}
+.about_me_descr p:nth-of-type(4){
+  padding-right: 100px;
+}
 .section_name {
   width: 100%;
   text-align: center;
@@ -3109,5 +3129,79 @@ strong {
     -webkit-background-size: 60% 60%;
             background-size: 60%; }
   .social_block {
-    border-right: none; } }
+    border-right: none; } 
+  .photo-bg-left{
+    width: 260px;
+    height: 300px;
+    float: none;
+    margin: 20px auto;
+  }
+  .photo-bg-left:after,
+  .photo-bg-left:before{
+    display: none;
+  }
+   .photo-sm-left{
+    width: 260px;
+    height: 300px;
+    float: none;
+    margin: 20px auto;
+  }
+  .photo-sm-left:after,
+  .photo-sm-left:before{
+    display: none;
+  }
+   .photo-sm-right{
+    width: 260px;
+    height: 300px;
+    float: none;
+    margin: 20px auto;
+  }
+  .photo-sm-right:after,
+  .photo-sm-right:before{
+    display: none;
+  }
+   .photo-bg-right{
+    width: 260px;
+    height: 300px;
+    float: none;
+    margin: 20px auto;
+  }
+  .photo-bg-right:after,
+  .photo-bg-right:before{
+    display: none;
+  }
+  .object_descr p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .about_me_stage{
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .stage p{
+    font-weight: 900;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .plank::after,.plank2::after,.plank3::after{
+    display: none;
+    margin: 0;
+    width: 0;
+  }
+  .plank::before,.plank2::before,.plank3::before{
+    display: none;
+    margin: 0;
+    width: 0;
+  }
+  .bot_section .head_next_block p {
+    font-size: 6rem;
+  }
+  }
 /*==========  Mobile First  ==========*/
