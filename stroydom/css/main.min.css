@@ -3089,6 +3089,68 @@ strong {
   .main_foot .adress_block p {
     font-weight: 600; }
 
+  .price_content{
+    width: 100%;
+    height: 100%;
+    padding: 60px 0; 
+  }
+  .block_on{
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  .price_content_mnu ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 40px;
+  }
+  .price_content_mnu ul li{
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    border: none;
+  }
+  .price_content_mnu ul li:hover{
+    border-bottom: 3px solid #f4ea39;
+  }
+  .price_content_text{
+    margin: 40px 0;
+  }
+  .table_head{
+    background-color: #f4ea39;
+  }
+  .table_head_item{
+    padding: 10px 8px;
+  }
+  .table_head_item:nth-child(1){
+    padding-right: 638px;
+  }
+  .table_head_item:nth-child(2){
+    padding-right: 36px;
+  }
+  .table_item_odd{
+    background-color: #9f9f9f;
+  }
+  .table_item_even{
+    background-color: #DADADA;
+  }
+  .table_item{
+    padding: 10px 8px; 
+  }
+  .table_item:nth-child(2),
+  .table_item:nth-child(3){
+    text-align: center;
+  }
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 991.98px) {
   .main-head {
