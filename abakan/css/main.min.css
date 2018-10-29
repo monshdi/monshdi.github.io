@@ -2855,6 +2855,9 @@ strong {
   padding: 6px 40px;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .main_head .top_head_mnu ul li:hover {
@@ -3106,6 +3109,7 @@ strong {
   display: block;
   margin: -12px auto;
   padding: 14px;
+  cursor: pointer;
   line-height: .2;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -3170,6 +3174,7 @@ strong {
 
 .table_content {
   background-color: #dcdcdc;
+  border-top: 3px solid #fff;
 }
 
 .table_content_item {
@@ -3237,7 +3242,7 @@ strong {
   margin: auto;
   background-color: #e8e8e8;
   padding-bottom: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .form form .head_form {
@@ -3278,8 +3283,29 @@ strong {
 
 .main_foot {
   width: 100%;
-  height: 400px;
-  background-color: #000;
+  background-color: #191919;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.main_foot .center_foot {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #e75a12;
+}
+
+.main_foot .left_foot {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.main_foot .right_foot {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.main_foot .right_foot a {
+  color: #e75a12;
 }
 
 /*==========  Desktop First  ==========*/
