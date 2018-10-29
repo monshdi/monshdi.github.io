@@ -2790,7 +2790,7 @@ body {
   line-height: 1.65;
   font-family: "roboto-example", sans-serif;
   overflow-x: hidden;
-  color: #fff;
+  color: #000;
 }
 
 body input, body textarea {
@@ -2813,8 +2813,8 @@ strong {
 
 .main_head {
   width: 100%;
-  height: 100%;
   background: url(../img/top-bg.png) no-repeat center center/cover;
+  color: #fff;
 }
 
 .main_head .top_line {
@@ -2929,6 +2929,7 @@ strong {
   min-width: 320px;
   height: 100%;
   background-color: #191919;
+  color: #fff;
 }
 
 .tarrifes h2 {
@@ -3019,7 +3020,7 @@ strong {
   content: '';
   position: absolute;
   top: 82px;
-  left: 40%;
+  right: 40px;
   background-color: #e75a12;
   height: 5px;
   width: 56%;
@@ -3046,7 +3047,6 @@ strong {
 .service {
   position: relative;
   width: 100%;
-  height: 100%;
   margin-top: 40px;
 }
 
@@ -3061,7 +3061,7 @@ strong {
   content: '';
   position: absolute;
   top: 22px;
-  left: 30%;
+  right: 40px;
   background-color: #e75a12;
   height: 5px;
   width: 66%;
@@ -3069,6 +3069,14 @@ strong {
 
 .service_content {
   margin-top: 40px;
+}
+
+.service_content_hide {
+  max-height: 60px;
+  overflow: hidden;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .service_content_card {
@@ -3107,6 +3115,171 @@ strong {
 
 .service_end .service_btn b {
   font-size: 3rem;
+}
+
+.active_content {
+  max-height: 500px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.price_list {
+  position: relative;
+  width: 100%;
+}
+
+.price_list h2 {
+  position: relative;
+  color: #e75a12;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.price_list::after {
+  content: '';
+  position: absolute;
+  margin-top: 40px;
+  top: 22px;
+  right: 40px;
+  background-color: #e75a12;
+  height: 5px;
+  width: 66%;
+}
+
+.price_list_table {
+  width: 100%;
+}
+
+.price_list_table table {
+  margin: 40px auto;
+}
+
+.table_head {
+  background-color: #e75a12;
+}
+
+.table_head_item {
+  padding: 16px;
+}
+
+.table_head_item:nth-of-type(1) {
+  padding-right: 360px;
+}
+
+.table_content {
+  background-color: #dcdcdc;
+}
+
+.table_content_item {
+  padding: 12px 16px;
+  margin: 6px;
+  color: #000;
+}
+
+.table_content_item:not(:nth-of-type(1)) {
+  text-align: center;
+  background-color: #bbb;
+}
+
+.advant {
+  position: relative;
+  width: 100%;
+}
+
+.advant h2 {
+  position: relative;
+  color: #e75a12;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.advant::after {
+  content: '';
+  position: absolute;
+  margin-top: 40px;
+  top: 22px;
+  right: 40px;
+  background-color: #e75a12;
+  height: 5px;
+  width: 56%;
+}
+
+.advant_block_item {
+  width: 180px;
+  height: 180px;
+  background-color: #bbb;
+  margin: 40px auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.advant_block_descr {
+  color: #000;
+  text-align: center;
+}
+
+.advant_block_descr b {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.form form {
+  width: 400px;
+  margin: auto;
+  background-color: #e8e8e8;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.form form .head_form {
+  text-align: center;
+  padding: 20px;
+}
+
+.form form .head_form h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.form form input {
+  display: block;
+  margin: 30px auto;
+  border: none;
+  padding: 8px;
+  width: 300px;
+}
+
+.form form button {
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+.form form .btn_primary {
+  width: 300px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.form form .btn_primary:hover {
+  background-color: #a0a0a0;
+}
+
+.main_foot {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
 }
 
 /*==========  Desktop First  ==========*/
