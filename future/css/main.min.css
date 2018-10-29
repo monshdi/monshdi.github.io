@@ -2811,6 +2811,10 @@ strong {
   font-weight: bold;
 }
 
+.section {
+  height: 900px;
+}
+
 .portfolio_block {
   position: relative;
   padding-top: 120px;
@@ -2827,6 +2831,9 @@ strong {
   background: url(../img/1.png) no-repeat center/cover;
   -webkit-transform: rotateX(16deg) skewX(16deg);
           transform: rotateX(16deg) skewX(16deg);
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
 }
 
 .portfolio_block_item:not(:nth-of-type(1)) {
@@ -2838,9 +2845,9 @@ strong {
   opacity: 1;
   width: 500px;
   height: 300px;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
 }
 
 /*==========  Desktop First  ==========*/
