@@ -2620,7 +2620,7 @@ strong {
 .photo-sm-left {
   width: 240px;
   height: 180px;
-  background: url(../img/1.jpg) no-repeat 100%;
+  background: url(../img/2.jpg) no-repeat 100%;
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
@@ -2647,14 +2647,14 @@ strong {
     height: 46%;
     border-left: 3px solid #fff; }
   .photo-sm-left .object_descr {
-    left: -140px;
+    left: -320px;
     top: 44%;
     text-align: right; }
 
 .photo-bg-right {
   width: 400px;
   height: 280px;
-  background: url(../img/1.jpg) no-repeat 100%;
+  background: url(../img/4.jpg) no-repeat 100%;
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
@@ -2680,13 +2680,13 @@ strong {
     height: 50%;
     border-left: 3px solid #fff; }
   .photo-bg-right .object_descr {
-    right: -140px;
+    right: -200px;
     top: 44%; }
 
 .photo-sm-right {
   width: 240px;
   height: 180px;
-  background: url(../img/1.jpg) no-repeat 100%;
+  background: url(../img/3.jpg) no-repeat 100%;
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-shadow: 3px 5px 7px 0px rgba(50, 50, 50, 0.6);
@@ -2712,7 +2712,7 @@ strong {
     height: 46%;
     border-left: 3px solid #fff; }
   .photo-sm-right .object_descr {
-    right: -140px;
+    right: -170px;
     top: 44%; }
 
 .about_me {
@@ -3011,7 +3011,32 @@ strong {
       margin: 10px 0;
       -webkit-border-radius: 5px;
               border-radius: 5px; }
-
+.home_btn_wraper{
+  position: relative;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+.home_btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f4ea39;
+  font-weight: 900;
+  border: 2px solid #f4ea39;
+  padding: 10px 40px;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+}
+.home_btn:hover{
+  color: #fff;
+  font-weight: 900;
+  background-color: #f4ea39;
+  text-decoration: none;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+}
 .btn_form {
   width: 100%;
   text-transform: uppercase;
