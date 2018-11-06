@@ -2788,7 +2788,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "roboto-example", sans-serif;
+  font-family: arial, sans-serif;
   overflow-x: hidden;
   color: #000;
 }
@@ -2916,14 +2916,14 @@ strong {
 }
 
 .top_content p {
-  width: 70%;
+  width: 80%;
   margin: auto;
   font-size: 2rem;
 }
 
 .bot_section {
   width: 100%;
-  height: 80px;
+  height: 78px;
   background: url(../img/rhomb-black.svg) repeat-x center center/contain;
 }
 
@@ -3309,4 +3309,42 @@ strong {
 }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 767.98px) {
+  .main_head {
+    height: 100%;
+  }
+  .main_head .top_head_mnu {
+    height: 34px;
+    font-size: 1.3rem;
+  }
+  .main_head .top_content h1 {
+    font-size: 6.4rem;
+  }
+  .main_head .top_content p {
+    width: 90%;
+  }
+  .bot_section, .bot_section_white {
+    height: 64px;
+  }
+  .tariffes_content_variant .price_p {
+    bottom: 40%;
+  }
+  .tariffes_content_variant .btn_tarrif {
+    bottom: 80px;
+    left: 22%;
+  }
+  ::after {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bot_section, .bot_section_white {
+    height: 48px;
+  }
+  .head_section h2 {
+    font-size: 2.4rem;
+  }
+}
+
 /*==========  Mobile First  ==========*/
