@@ -5,22 +5,45 @@
 
 $(function() {
 
-	const slider = $('.portfolio_wrap_slider');
+	
 	// Слайдер для портфолио
+	const slider = $('.portfolio_wrap_slider');
 	slider.slick({
 		vertical: true,
 		slideToShow: 1,
+		dots: false,
 	});
+	slider.ready(function(){
+		$('.portfolio_item_descr').addClass('descr_vis')
+	 	$('.portfolio_item_photocard').addClass('screen_vis')
+	});
+
+	slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	 if ('.slick-active') {
+	 	$('.portfolio_item_descr').removeClass('descr_vis')
+	 	$('.portfolio_item_photocard').removeClass('screen_vis')
+	 }
+});
+
+	slider.on('afterChange', function(event, slick, currentSlide){
+	 if ('.slick-active') {
+	 	$('.portfolio_item_descr').addClass('descr_vis')
+	 	$('.portfolio_item_photocard').addClass('screen_vis')
+	 } 
+});
 
 	// Смена слайдов скроллом
 	slider.mousewheel((e) => {
 		e.preventDefault();
 		if (e.deltaY < 0){
-			slider.slick('slickNext'),
-			$('.portfolio_item_descr').addClass('descr_vis');
+			slider.slick('slickNext');
+			// $('.portfolio_item_descr').addClass('descr_vis');
 		} else {
 			slider.slick('slickPrev');
 		}
 	});
+
+	// Навигация 
+	
 
 });
