@@ -3120,6 +3120,13 @@ strong {
           align-items: flex-start;
 }
 
+.portfolio_wrap_nav ul li {
+  font-size: 1.2rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
 .portfolio_wrap_slider .portfolio_item {
   position: relative;
   color: #fff;
@@ -3179,6 +3186,10 @@ strong {
 
 .portfolio_wrap .active_nav {
   color: #fff;
+  font-size: 1.6rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 #port_slide1 .portfolio_item_photocard {

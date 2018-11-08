@@ -7,39 +7,59 @@ $(function() {
 
 	
 	// Слайдер для портфолио
-	const slider = $('.portfolio_wrap_slider');
-	slider.slick({
-		vertical: true,
+	const sliderPort = $('.portfolio_wrap_slider');
+	sliderPort.slick({
 		slideToShow: 1,
-		dots: false,
+		arrows: false,
 	});
-	slider.ready(function(){
+
+	sliderPort.ready(function(){
 		$('.portfolio_item_descr').addClass('descr_vis')
-	 	$('.portfolio_item_photocard').addClass('screen_vis')
+		$('.portfolio_item_photocard').addClass('screen_vis')
+		$('#pag1').addClass('active_nav')
 	});
 
-	slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-	 if ('.slick-active') {
-	 	$('.portfolio_item_descr').removeClass('descr_vis')
-	 	$('.portfolio_item_photocard').removeClass('screen_vis')
-	 }
-});
+	sliderPort.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		if ('.slick-active') {
+			$('.portfolio_item_descr').removeClass('descr_vis')
+			$('.portfolio_item_photocard').removeClass('screen_vis')
+		}
+	});
 
-	slider.on('afterChange', function(event, slick, currentSlide){
-	 if ('.slick-active') {
-	 	$('.portfolio_item_descr').addClass('descr_vis')
-	 	$('.portfolio_item_photocard').addClass('screen_vis')
-	 } 
-});
+	sliderPort.on('afterChange', function(event, slick, currentSlide){
+		if ('.slick-active') {
+			$('.portfolio_item_descr').addClass('descr_vis')
+			$('.portfolio_item_photocard').addClass('screen_vis')
+		}
+		if (currentSlide == 0){
+			$('#pag1').addClass('active_nav')
+		} else {
+			$('#pag1').removeClass('active_nav')
+		}
+		if (currentSlide == 1){
+			$('#pag2').addClass('active_nav')
+		} else {
+			$('#pag2').removeClass('active_nav')
+		}
+		if (currentSlide == 2){
+			$('#pag3').addClass('active_nav')
+		} else {
+			$('#pag3').removeClass('active_nav')
+		}
+		if (currentSlide == 3){
+			$('#pag4').addClass('active_nav')
+		} else {
+			$('#pag4').removeClass('active_nav')
+		}
+	});
 
 	// Смена слайдов скроллом
-	slider.mousewheel((e) => {
+	sliderPort.mousewheel((e) => {
 		e.preventDefault();
 		if (e.deltaY < 0){
-			slider.slick('slickNext');
-			// $('.portfolio_item_descr').addClass('descr_vis');
+			sliderPort.slick('slickNext');
 		} else {
-			slider.slick('slickPrev');
+			sliderPort.slick('slickPrev');
 		}
 	});
 
