@@ -1,0 +1,207 @@
+	<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>WAtellier</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+	<!-- Секция оформления заказа -->
+
+	<section class="order_wrap">
+		<div class="container">
+			<form action="" class="order_wrap_form">
+
+				<div class="order_wrap_nav">
+					<ul>
+						<li class="step_choose" id="choose1" data-num="1"><a>Шаг 1</a></li>
+						<li class="step_choose" id="choose2" data-num="2"><a>Шаг 2</a></li>
+						<li class="step_choose" id="choose3" data-num="3"><a>Шаг 3</a></li>
+					</ul>
+				</div>
+
+				<div class="step_one step_on active" id="step1">
+					<h3>Здравствуйте. Как к вам обращаться?</h3>
+					<input type="text" name="user_name" placeholder="Имя" required/>
+					<input type="text" name="user_lastname" placeholder="Отчество" required/>
+					<h3>Укажите ваш город</h3>
+					<input type="text" name="user_city" placeholder="Кемерово">
+					<h3>Создание брифа</h3>
+					<div class="sub_text">Бриф - подробное описание вашего задания</div>
+					<select name="user_select">
+						<option value="Дизайн + Верстка">Дизайн + Верстка</option>
+						<option value="Дизайн сайта">Дизайн сайта</option>
+						<option value="Верстка сайта с вашим дизайном">Верстка сайта с вашим дизайном</option>
+						<option value="Логотип">Логотип</option>
+					</select>
+					<button class="added_btn">Добавить услугу +</button>
+					<a href="#" class="step_button step_choose" data-num="2">Перейти к шагу 2</a>
+				</div>
+				<div class="step_two step_on" id="step2">
+					<div class="sum_block">
+						Общая сумма услуг: <span>18900 руб.</span>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="left_step_block">
+								<label for="user_comment">
+									<h3>
+										Расскажите про вашу компанию и о особых пожеланиях к заданию.
+									</h3>
+									<div class="sub_text">Добавьте комментарий</div>
+								</label>
+								<textarea name="user_comment" id="user_comment" cols="46" rows="10"></textarea>
+								<div class="sub_text">Добавить файл .jpg, .txt, .xls, .psd, .ai, .cr</div>
+								<div class="upload">
+									<label>
+										<input type="file">
+										<span>+</span>
+										<P>Добавить</P>
+									</label>
+								</div>
+								<div class="range_block">
+									<h3>Каким должен быть ваш сайт</h3>
+									<div class="sub_text">Внешний вид сайта</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Женственный</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Мужественный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Молодой</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Взрослый</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Роскошный</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Экономичный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Современный</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Консервативный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Игривый</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Серьезный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Простой</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Комплексный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Утонченый</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Заметный</span>
+									</div>
+									<div class="range_block_item">
+										<span class="left_range_text">Светлый</span> <input type="range" min="0" max="100" step="20" value="50"><span
+										 class="right_range_text">Темный</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="right_step_block">
+								<div class="expl_step">
+									<h3>Что нужно донести в дизайне сайта</h3>
+									<input type="text" id="user_expl" name="user_expl">
+								</div>
+								<div class="example_step">
+									<h3>Примеры</h3>
+									<div class="sub_text">Укажите какие сайты и что конкретно вас привлекает</div>
+									<div class="example_step_item">
+										<label for="menu_example">Меню: </label>
+										<input type="text" placeholder="www.пример-c-сайта.ru">
+									</div>
+									<div class="example_step_item">
+										<label for="catalog_example">Каталог: </label>
+										<input type="text" placeholder="www.пример-с-сайта.ru">
+									</div>
+									<div class="example_step_item">
+										<label for="item_example">Товар: </label>
+										<input type="text" placeholder="www.пример-с-сайта.ru">
+									</div>
+								</div>
+								<div class="check_step">
+									<h3>Готовы ли вы покупать фотографии или шрифты</h3>
+									<a href="#" class="sub_text">Почему я должен их покупать</a> <br>
+									<label>
+										<input class="radio_check" id="check1" type="radio" name="check_yes" id="check_yes">
+										<span class="radio_custom">Да</span>
+									</label>
+									<label>
+										<input class="radio_check" id="check2" type="radio" name="check_yes" id="check_no" checked>
+										<span class="radio_custom">Нет</span>
+									</label>
+								</div>
+								<div class="corp_style">
+									<h3>Сохранение уже имеющегося фирменного стиля</h3>
+									<div class="sub_text">
+										Для сохранения стиля потребуетс "брендбук" в котором содержаться все особенности вашего стиля
+									</div>
+									<label>
+										<input type="radio" name="check_style" id="check_style_yes">
+										<span class="check_style">Да, это обязательно</span>
+									</label>
+									<label>
+										<input type="radio" name="check_style" id="check_style_no">
+										<span class="check_style">Нет, это не обязательно</span>
+									</label>
+								</div>
+								<a href="#" class="step_button step_choose" data-num="3">Перейти к шагу 3</a>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="step_three step_on" id="step3">
+					<h3>Для нас каждый клиент очень важен <br> мы уважительно относимся к чужому времени</h3>
+					<a href="#" class="offert" >условия предоставления услуг</a> <br>
+					<div class="check_offert">
+					<label>
+						<input type="checkbox" name="offert_ok" id="offert_ok">
+						<div class="check_offert_item">
+							<div class="check_offert_item_box"></div>
+							<div class="sub_text">Я ознакомился с условиями и меня устраивает цена услуг</div></div>
+						
+					</label>
+					</div>
+					<div class="connect_step">
+						<h3>Мы обязательно с вами свяжемся</h3>
+						<div class="sub_text">Вам удобнее, чтобы мы позвонили или написали на E-mail?</div>
+						<input type="tel" placeholder="Номер">
+						<input type="email" placeholder="Почта">
+					</div>
+					<input type="submit" class="step_button" value="заказать">
+				</div>
+
+
+
+			</form>
+		</div>
+	</section>
+
+	<!-- Секция оформления заказа -->
+
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
