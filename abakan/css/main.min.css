@@ -2786,6 +2786,7 @@ html {
 body {
   font-size: 16px;
   min-width: 320px;
+  min-height: 100vh;
   position: relative;
   line-height: 1.65;
   font-family: arial, sans-serif;
@@ -2817,7 +2818,7 @@ strong {
   color: #fff;
 }
 
-.main_head .top_line {
+.top_line {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 0;
   text-align: center;
@@ -2825,14 +2826,14 @@ strong {
   font-weight: 900;
 }
 
-.main_head .top_head_mnu {
+.top_head_mnu {
   width: 100%;
   height: 39px;
   background-color: #e75a12;
   padding: 0;
 }
 
-.main_head .top_head_mnu ul {
+.top_head_mnu ul {
   width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2850,25 +2851,33 @@ strong {
   list-style-type: none;
 }
 
-.main_head .top_head_mnu ul li {
+.top_head_mnu ul li {
   position: relative;
-  padding: 6px 40px;
+  height: 39px;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
 }
 
-.main_head .top_head_mnu ul li:hover {
+.top_head_mnu ul li a {
+  color: #fff;
+  display: block;
+  padding: 6px 20px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.top_head_mnu ul li a:hover {
   background-color: #e8e8e8;
+  color: #e75a12;
 }
 
-.main_head .top_head_mnu ul li ul {
+.top_head_mnu ul li ul {
   padding: 0;
 }
 
-.main_head .top_head_mnu ul li .submenu {
+.top_head_mnu ul li .submenu {
   position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2879,7 +2888,7 @@ strong {
   left: 0;
   width: 220px;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #e75a12;
   font-size: 1.4rem;
   -webkit-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
@@ -2892,11 +2901,7 @@ strong {
           transform-origin: 0 0;
 }
 
-.main_head .top_head_mnu ul li .submenu li {
-  padding-left: 40px;
-}
-
-.main_head .top_head_mnu ul li:hover .submenu {
+.top_head_mnu ul li:hover .submenu {
   -webkit-transform: scaleY(1);
       -ms-transform: scaleY(1);
           transform: scaleY(1);
@@ -2946,9 +2951,7 @@ strong {
   text-transform: uppercase;
   color: #fff;
   background-color: #e75a12;
-  padding: 4px 46px;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  padding: 8px 46px;
 }
 
 .tariffes_content_variant {
@@ -2970,6 +2973,7 @@ strong {
 .tariffes_content_variant h3 {
   font-size: 2rem;
   text-align: center;
+  padding: 8px;
   margin-bottom: 28px;
 }
 
@@ -3308,7 +3312,142 @@ strong {
   color: #e75a12;
 }
 
+.tech_wrap {
+  padding: 40px 0;
+}
+
+.tech_wrap_block_item .head_section {
+  position: relative;
+  cursor: pointer;
+}
+
+.tech_wrap_block_item .head_section h3 {
+  position: relative;
+  color: #e75a12;
+  text-transform: uppercase;
+  margin-top: 24px;
+  font-size: 2.4rem;
+}
+
+.tech_wrap_block_item .head_section h3::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 140px;
+  background-color: #e75a12;
+  height: 3px;
+  width: 52%;
+}
+
+.tech_wrap_block_item .head_section .arrow_button {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 94px;
+  height: 24px;
+  width: 24px;
+  border-right: 2px solid #e75a12;
+  border-bottom: 2px solid #e75a12;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 3s all;
+  -o-transition: 3s all;
+  transition: 3s all;
+}
+
+.tech_wrap_block_item .head_section .arrow_button.active_arrow {
+  -webkit-transform: rotate(-1215deg);
+      -ms-transform: rotate(-1215deg);
+          transform: rotate(-1215deg);
+  -webkit-transition: 3s all;
+  -o-transition: 3s all;
+  transition: 3s all;
+}
+
+.tech_wrap_block_item_descr {
+  max-height: 6px;
+  overflow: hidden;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
+}
+
+.tech_wrap_block_item .active_descr {
+  padding: 20px 0;
+  max-height: 600px;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
+}
+
+.blog_wrap {
+  position: relative;
+  padding: 20px 0;
+}
+
+.blog_wrap .blog_item {
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 30px 0;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
+}
+
+.blog_wrap .blog_item:hover {
+  background: url(../img/top-bg.png) no-repeat center center/cover;
+  color: #fff;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
+}
+
+.blog_wrap .blog_item:hover .blog_item_right {
+  display: none;
+  -webkit-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.blog_wrap .blog_item_left {
+  padding: 40px;
+}
+
+.blog_wrap .blog_item_left .btn_blog {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #e75a12;
+  border: 1px solid #e75a12;
+  padding: 8px 10px;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+}
+
+.blog_wrap .blog_item_left .btn_blog:hover {
+  background-color: #e75a12;
+  color: #fff;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+}
+
+.blog_wrap .blog_item_right {
+  width: 360px;
+  height: 200px;
+  margin: 40px;
+  background: url(../img/top-bg.png) no-repeat top left/contain;
+}
+
 /*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  .bot_section, .bot_section_white {
+    height: 48px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .main_head {
     height: 100%;
@@ -3324,7 +3463,7 @@ strong {
     width: 90%;
   }
   .bot_section, .bot_section_white {
-    height: 64px;
+    height: 48px;
   }
   .tariffes_content_variant .price_p {
     bottom: 40%;
@@ -3340,10 +3479,24 @@ strong {
 
 @media (max-width: 575.98px) {
   .bot_section, .bot_section_white {
-    height: 48px;
+    height: 26px;
   }
   .head_section h2 {
     font-size: 2.4rem;
+  }
+  .tariffes_content_variant .price_p {
+    bottom: 40%;
+  }
+  .tariffes_content_variant .btn_tarrif {
+    font-size: 1.4rem;
+    bottom: 80px;
+    left: 8%;
+  }
+  ::after {
+    display: none;
+  }
+  .form form {
+    width: 300px;
   }
 }
 
