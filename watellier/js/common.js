@@ -6,5 +6,6 @@ $(function() {
 		$('#step' + num).addClass('active')
 	});
 	
+	// калукулятор
 
 });

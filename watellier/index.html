@@ -31,7 +31,7 @@
 
 				<div class="order_wrap_nav">
 					<ul>
-						<li class="step_choose" id="choose1" data-num="1"><a>Шаг 1</a></li>
+						<li class="step_choose active_nav" id="choose1" data-num="1"><a>Шаг 1</a></li>
 						<li class="step_choose" id="choose2" data-num="2"><a>Шаг 2</a></li>
 						<li class="step_choose" id="choose3" data-num="3"><a>Шаг 3</a></li>
 					</ul>
@@ -40,7 +40,7 @@
 				<div class="step_one step_on active" id="step1">
 					<h3>Здравствуйте. Как к вам обращаться?</h3>
 					<input type="text" name="user_name" placeholder="Имя" required/>
-					<input type="text" name="user_lastname" placeholder="Отчество" required/>
+					<input type="text" name="user_lastname" placeholder="Отчество">
 					<h3>Укажите ваш город</h3>
 					<input type="text" name="user_city" placeholder="Кемерово">
 					<h3>Создание брифа</h3>
@@ -184,10 +184,10 @@
 					<div class="connect_step">
 						<h3>Мы обязательно с вами свяжемся</h3>
 						<div class="sub_text">Вам удобнее, чтобы мы позвонили или написали на E-mail?</div>
-						<input type="tel" placeholder="Номер">
-						<input type="email" placeholder="Почта">
+						<input type="tel" name="tel" placeholder="Номер">
+						<input type="email" name="email" placeholder="Почта">
 					</div>
-					<input type="submit" class="step_button" value="заказать">
+					<input type="submit" class="step_button" value="заказать" disabled>
 				</div>
 
 
@@ -200,7 +200,8 @@
 
 
 
-	<script src="js/scripts.min.js"></script>
+	<!-- <script src="js/scripts.min.js"></script> -->
+	<script src="js/form.js"></script>
 
 </body>
 

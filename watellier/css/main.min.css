@@ -2870,19 +2870,14 @@ strong {
   width: 100%;
   padding: 10px;
   text-align: center;
-  cursor: pointer;
 }
 
-.order_wrap_nav ul li:hover {
+.order_wrap_nav ul .active_nav {
   background-color: #cecfd1;
   color: #000;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.order_wrap_nav ul li .active_nav {
-  background-color: #cecfd1;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
 }
 
 .order_wrap .step_button {
@@ -2894,6 +2889,11 @@ strong {
   font-size: 2em;
   padding: 40px 40px;
   margin: 60px;
+}
+
+.order_wrap .step_button[disabled] {
+  background-color: gray;
+  color: #1e1e1e;
 }
 
 .order_wrap .sub_text {
@@ -3149,7 +3149,7 @@ strong {
 }
 
 .order_wrap .step_three .check_offert label #offert_ok {
-  display: none;
+  display: block;
 }
 
 .order_wrap .step_three .connect_step .sub_text {
