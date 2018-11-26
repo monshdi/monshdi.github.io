@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 100px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.field{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	background-color: #fab1a0;
+}
+
+.excel{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+.snakeBody{
+	background: #55efc4;
+	background-size: cover;
+	border-radius: 40%;
+	/*transition: .1s all;*/
+}
+
+.head{
+	background: #00b894;
+	background-size: cover;
+	border-radius: 10%;
+	/*transition: .1s all;*/
+}
+
+.mouse{
+	background: #d63031;
+	background-size: cover;
+	border-radius: 50%;
+}
