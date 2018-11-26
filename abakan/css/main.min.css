@@ -3314,6 +3314,7 @@ strong {
 
 .tech_wrap {
   padding: 40px 0;
+  min-height: 100vh;
 }
 
 .tech_wrap_block_item .head_section {
@@ -3395,6 +3396,10 @@ strong {
   transition: .6s all;
 }
 
+.blog_wrap .blog_item a {
+  text-decoration: none;
+}
+
 .blog_wrap .blog_item:hover {
   background: url(../img/top-bg.png) no-repeat center center/cover;
   color: #fff;
@@ -3414,10 +3419,16 @@ strong {
   padding: 40px;
 }
 
-.blog_wrap .blog_item_left .btn_blog {
+.blog_wrap .blog_item_right {
+  width: 360px;
+  height: 200px;
+  margin: 40px;
+  background: url(../img/top-bg.png) no-repeat top left/contain;
+}
+
+.btn_blog {
   display: inline-block;
   margin-top: 40px;
-  text-decoration: none;
   color: #e75a12;
   border: 1px solid #e75a12;
   padding: 8px 10px;
@@ -3426,7 +3437,7 @@ strong {
   transition: .4s all;
 }
 
-.blog_wrap .blog_item_left .btn_blog:hover {
+.btn_blog:hover {
   background-color: #e75a12;
   color: #fff;
   -webkit-transition: .4s all;
@@ -3434,11 +3445,54 @@ strong {
   transition: .4s all;
 }
 
-.blog_wrap .blog_item_right {
-  width: 360px;
-  height: 200px;
-  margin: 40px;
-  background: url(../img/top-bg.png) no-repeat top left/contain;
+.portfolio_page_wrap {
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.portfolio_page_item {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+  overflow: hidden;
+}
+
+.portfolio_page_item a {
+  text-decoration: none;
+}
+
+.portfolio_page_item img {
+  height: 400px;
+  width: 100%;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+}
+
+.portfolio_page_item_descr {
+  position: absolute;
+  top: 60px;
+  right: -140px;
+  font-size: 1.8rem;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+  color: #e75a12;
+}
+
+.portfolio_page_item:hover img {
+  width: 60%;
+}
+
+.portfolio_page_item:hover .portfolio_page_item_descr {
+  right: 60px;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
 }
 
 /*==========  Desktop First  ==========*/
