@@ -2834,13 +2834,16 @@ strong {
   color: #fff;
   text-transform: uppercase;
   background-color: #369EBE;
-  top: -400px;
+  top: 0;
   left: 0;
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
   z-index: -1;
   padding-top: 100px;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 .top_head h1 {
