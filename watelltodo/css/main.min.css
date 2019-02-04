@@ -2828,6 +2828,26 @@ strong {
   font-weight: bold;
 }
 
+.top_line {
+  padding: 40px 0 20px 0;
+  width: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  z-index: 10000;
+}
+
+.top_line .top_logo {
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.top_line .top_logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .top_head {
   position: absolute;
   width: 100%;
@@ -2840,7 +2860,7 @@ strong {
   -o-transition: .6s;
   transition: .6s;
   z-index: -1;
-  padding-top: 100px;
+  padding-top: 140px;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -2853,24 +2873,15 @@ strong {
   z-index: -1;
 }
 
-.top_line {
+.top_head .btn-add {
   position: relative;
-  padding: 40px 0 20px 0;
-  width: 100%;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-}
-
-.top_line .top_logo {
-  width: 100%;
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-.top_line .top_logo a {
-  color: #fff;
-  text-decoration: none;
+  margin-top: -60px;
+  background-color: #160931;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  font-size: 2.2rem;
+  cursor: pointer;
 }
 
 .btn {
@@ -2924,6 +2935,7 @@ strong {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  z-index: 10000;
 }
 
 .login_wrap .btn-close {
@@ -2968,6 +2980,70 @@ strong {
   padding: 0 20px;
   border: none;
   background: #C4C4C4;
+}
+
+.task_wrap_form {
+  position: absolute;
+  display: none;
+  top: 40px;
+  left: 50%;
+  margin-left: -240px;
+  width: 500px;
+  min-height: 400px;
+  padding: 20px 40px;
+  background: #ADADBB;
+  z-index: 1000;
+}
+
+.task_wrap_form input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+}
+
+.task_wrap_form hr {
+  height: 2px;
+  background-color: #000;
+}
+
+.task_wrap_form .check_wrap {
+  margin-top: 40px;
+}
+
+.task_wrap_form .check_wrap input {
+  font-size: 1.8rem;
+}
+
+.task_wrap_form .check_wrap .add-check {
+  cursor: pointer;
+}
+
+.task_wrap_form .task_date {
+  margin-top: 60px;
+}
+
+.task_wrap_form .ok_button {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.task_wrap_items {
+  position: relative;
+  top: 120px;
+}
+
+.task_wrap_items .tasc_card {
+  margin-top: 40px;
+  background-color: #369EBE;
+  padding: 10px 20px;
+}
+
+.main_wrap {
+  display: none;
 }
 
 .main_wrap .sel_wrap {
