@@ -98,7 +98,8 @@ $(function(){
 		slidesToShow : 1,
 		autoplay : true,
 		autoplaySpeed : 2000,
-		prevArrow : '<button type="button" class="slick-prev"><img src="../img/arrow-left.svg"></button>'
+		prevArrow : '<button type="button" class="arrow-left"><img src="../img/arrow-left.svg"></button>',
+		nextArrow : '<button type="button" class="arrow-right"><img src="../img/arrow-right.svg"></button>'
 	});
 
 	$('.btn-send').click(function(){
