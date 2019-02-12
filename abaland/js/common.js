@@ -41,7 +41,6 @@ window.addEventListener('DOMContentLoaded', function(){
 		close = document.querySelector('.close_btn'),
 		btnTop = document.getElementById('top_open');
 		
-
 	 	btnTop.addEventListener('click', ()=> {
 	 		popup.style.display = 'block';
 	 		document.body.style.overflowY = 'hidden';
@@ -49,6 +48,11 @@ window.addEventListener('DOMContentLoaded', function(){
 
 		for (let i = 0; i < btn.length; i++){
 			btn[i].addEventListener('click', ()=> {
+
+				if (btn[i].classList.contains('no-modal')){
+					return
+				};
+
 				popup.style.display = 'block';
 				document.body.style.overflowY = 'hidden';
 			});
@@ -70,10 +74,10 @@ $(function(){
 	$(window).scroll(function(){
 		let scrollDo = $(window).scrollTop(),
 			navHeight = $('nav').height();
-		if (scrollDo > navHeight) {
-			$('.top_line').addClass('hide_mnu');
-		};
-		if (scrollDo > navHeight + 50) {
+		// if (scrollDo > navHeight) {
+		// 	$('.top_line').addClass('hide_mnu');
+		// };
+		if (scrollDo > navHeight + 650) {
 			$('.top_line').addClass('fixed');
 		} else {
 			$('.top_line').removeClass('hide_mnu fixed');
@@ -90,9 +94,14 @@ $(function(){
 	});
 
 	$('.top_head_mnu ul li a').mPageScroll2id({
-		offset : 60,
+		offset : 60
 	});
-	$('.btn-to-top').mPageScroll2id();
+	
+	$('.btn-to-top').click(function(){
+		$('body,html').animate({scrollTop : 0},1000);
+	});
+
+
 
 	$('.slider').slick({
 		slidesToShow : 1,
@@ -105,4 +114,4 @@ $(function(){
 	$('.btn-send').click(function(){
 		alert('спасибо за отзыв')
 	});
-})
+})	
