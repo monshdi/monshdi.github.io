@@ -2953,8 +2953,13 @@ strong {
   font-size: 3rem;
 }
 
-.make_dev .calc-items .total_count span {
+.make_dev .calc-items .total_count input {
   margin-left: 26px;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: #fff;
   border-bottom: 2px solid #fff;
 }
 
