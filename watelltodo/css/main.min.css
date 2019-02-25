@@ -235,7 +235,8 @@ th {
 }
 
 label {
-  display: inline-block;
+  display: inline-block;рируйтесь, чтобы начать работу</span>
+  <div class="logi
   margin-bottom: .5rem;
 }
 
@@ -2937,8 +2938,25 @@ strong {
   transition: 1s;
   z-index: 10000;
 }
+.reg_wrap {
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background: #368EBE;
+  -webkit-box-shadow: 0px 4px 40px #000;
+          box-shadow: 0px 4px 40px #000;
+  top: -1860px;
+  left: 50%;
+  margin-left: -260px;
+  padding: 40px 60px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  z-index: 10000;
+}
 
-.login_wrap .btn-close {
+.login_wrap .btn-close,
+.reg_wrap .btn-close {
   position: absolute;
   font-size: 1.8em;
   top: 0;
@@ -2973,8 +2991,32 @@ strong {
           justify-content: space-around;
   margin-top: 80px;
 }
+.reg_wrap_form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 540px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-top: 80px;
+}
 
-.login_wrap_form input {
+.login_wrap_form input,
+.reg_wrap_form input {
   width: 430px;
   height: 66px;
   padding: 0 20px;
