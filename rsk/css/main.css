@@ -88,7 +88,8 @@ body {
 .main-head__top_content {
   width: 1920;
   height: 800px;
-  background: url(../img/men_bg.png) no-repeat 1060px 120px, url(../img/bg_wrap.png) no-repeat left top/100% 80%, url(../img/bg1.png) no-repeat left 160px;
+  /* background: url(../img/men_bg.png) no-repeat 1060px 120px, url(../img/bg_wrap.png) no-repeat left top/100% 80%, url(../img/bg1.png) no-repeat left 160px; */
+  background: url(../img/solo_bg.png) no-repeat center center / cover
 }
 
 .main-head__top_content h2 {
@@ -215,13 +216,15 @@ section {
 .works {
   width: 100%;
   height: 862px;
-  background: url(../img/women_bg.png) no-repeat bottom right, #f4f4f2;
+  /* background: url(../img/women_bg.png) no-repeat bottom right, #f4f4f2; */
+  background: url(../img/women2_bg.png) no-repeat center center / cover
 }
 
 .refregerator-works {
   width: 100%;
   height: 682px;
-  background: url(../img/bg_worker.png) no-repeat bottom left, #f4f4f2;
+  /* background: url(../img/bg_worker.png) no-repeat bottom left, #f4f4f2; */
+  background: url(../img/bg_worker2.png) no-repeat center center / cover
 }
 
 .refregerator-works__content {
@@ -235,13 +238,15 @@ section {
 .dishwasher-works {
   width: 100%;
   height: 730px;
-  background: url(../img/posudomojka.png) no-repeat bottom right, #f4f4f2;
+  /* background: url(../img/posudomojka.png) no-repeat bottom right, #f4f4f2; */
+  background: url(../img/posudomojka2.png) no-repeat center center / cover
 }
 
 .cofemachine-works {
   width: 100%;
   height: 720px;
-  background: url(../img/cofee_machine.png) no-repeat bottom left, #f4f4f2;
+  /* background: url(../img/cofee_machine.png) no-repeat bottom left, #f4f4f2; */
+  background: url(../img/cofee_machine2.png) no-repeat center center / cover
 }
 
 .cofemachine-works__content {
@@ -281,5 +286,33 @@ section {
 
 .main_foot ul a {
   color: #fff;
+}
+
+@media screen and (max-width: 1300px){
+  html{
+    font-size: 6px;
+  } 
+  .main-head__navbar_logo img {
+    width: 30px;
+  }
+  .main-head__navbar{
+    padding: 20px 0;
+  }
+  .main-head__navbar,
+  .main-head__top_content_text,
+  .text_wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .text_wrap form {
+    margin-left: 0;
+  }
+  .main-head__top_content_form{
+    margin-left: 10%;
+    margin-top: 60px;
+  }
+  .main-head__top_content_form{
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
