@@ -7,6 +7,12 @@ window.addEventListener('DOMContentLoaded', () => {
             mobMnu.classList.toggle('active_mmnu');
             burg.classList.toggle('active');
             burg.classList.toggle('not-active');
+
+            if (mobMnu.classList.contains('active_mmnu')){
+                document.body.style.overflowY = 'hidden';
+            } else {
+                document.body.style.overflowY = '';
+            }
         });
 
 })
