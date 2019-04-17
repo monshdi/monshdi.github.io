@@ -1,39 +1,39 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("BebasNeueRegular.eot");
-  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("BebasNeueRegular.woff") format("woff"), url("BebasNeueRegular.ttf") format("truetype");
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot");
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("BebasNeueBold.eot");
-  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("BebasNeueBold.woff") format("woff"), url("BebasNeueBold.ttf") format("truetype");
+  src: url("../fonts/BebasNeueBold/BebasNeueBold.eot");
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/BebasNeueBold/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold/BebasNeueBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("BebasNeueLight.eot");
-  src: local("Bebas Neue Light"), local("BebasNeueLight"), url("BebasNeueLight.eot?#iefix") format("embedded-opentype"), url("BebasNeueLight.woff") format("woff"), url("BebasNeueLight.ttf") format("truetype");
+  src: url("../fonts/BebasNeueLight/BebasNeueLight.eot");
+  src: local("Bebas Neue Light"), local("BebasNeueLight"), url("../fonts/BebasNeueLight/BebasNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueLight/BebasNeueLight.woff") format("woff"), url("../fonts/BebasNeueLight/BebasNeueLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("BebasNeue-Thin.eot");
-  src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("BebasNeue-Thin.woff") format("woff"), url("BebasNeue-Thin.ttf") format("truetype");
+  src: url("../fonts/BebasNeue-Thin/BebasNeue-Thin.eot");
+  src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("../fonts/BebasNeue-Thin/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Thin/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin/BebasNeue-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bebas Neue Book';
-  src: url("BebasNeueBook.eot");
-  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("BebasNeueBook.woff") format("woff"), url("BebasNeueBook.ttf") format("truetype");
+  src: url("../fonts/BebasNeueBook/BebasNeueBook.eot");
+  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("../fonts/BebasNeueBookBebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBookBebasNeueBook.woff") format("woff"), url("../fonts/BebasNeueBookBebasNeueBook.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -2577,7 +2577,7 @@ strong {
   width: 100%;
   padding: 65px 0;
   height: 100%;
-  background: url(../img/air-conditioners.jpg) no-repeat bottom right/50%;
+  background: url(../img/top_bg.png) no-repeat center 120px/contain;
 }
 
 .main_head .main_nav {
@@ -2614,15 +2614,15 @@ strong {
   color: #0095fd;
 }
 
-.main_head .main_nav .contacts {
+.main_head_contacts {
   line-height: 25px;
 }
 
-.main_head .main_nav .contacts p {
+.main_head_contacts p {
   font-size: 2.5rem;
 }
 
-.main_head .main_nav .contacts img {
+.main_head_contacts img {
   width: 25px;
 }
 
@@ -2781,6 +2781,7 @@ strong {
 
 .form_wrap {
   background-color: #f6f6f6;
+  padding: 60px;
 }
 
 .form_wrap .section_heading {
@@ -2810,20 +2811,112 @@ strong {
   padding-left: 20px;
 }
 
-.form_wrap .offert {
+.offert {
   font-family: 'Open Sans SemiBold', sans-serif;
   font-size: 1.4rem;
   color: #525252;
   margin-left: 120px;
 }
 
-.form_wrap .offert a {
+.offert a {
   color: #525252;
   text-decoration: underline;
 }
 
 .slider-wrap {
   position: relative;
+  width: 100%;
+}
+
+.slider-wrap img {
+  width: 100%;
+}
+
+.slider-wrap .arrow-prev, .slider-wrap .arrow-next {
+  position: absolute;
+  top: 45%;
+  width: 10px;
+  height: 16px;
+  background: url(../img/arrow.png) no-repeat;
+  cursor: pointer;
+}
+
+.slider-wrap .arrow-prev {
+  left: 20%;
+}
+
+.slider-wrap .arrow-next {
+  right: 20%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contacts {
+  width: 100%;
+  padding-top: 120px;
+  color: #fff;
+  background: url(../img/map.png) no-repeat center center/cover;
+}
+
+.contacts-item {
+  font-size: 4rem;
+  margin-top: 200px;
+  margin-bottom: 60px;
+}
+
+.contacts-item a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contacts-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 30px;
+}
+
+.contacts-form form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+.contacts-form form input[type="text"], .contacts-form form input[type="tel"] {
+  width: 255px;
+  height: 45px;
+  padding-left: 20px;
+}
+
+.contacts-form .offert {
+  color: #fff;
+}
+
+.contacts-form .offert a {
+  color: #fff;
+}
+
+.main_foot {
+  height: 150px;
+  width: 100%;
+  background-color: #171720;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
 }
 
 /*==========  Desktop First  ==========*/
