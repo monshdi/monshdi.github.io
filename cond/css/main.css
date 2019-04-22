@@ -2822,6 +2822,7 @@ strong {
 
 .form_wrap {
   background-color: #f6f6f6;
+  padding-bottom: 40px;
 }
 
 .form_wrap .section_heading {
@@ -3073,6 +3074,9 @@ strong {
   form input {
     margin-bottom: 30px;
   }
+  .contacts-item {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -3107,6 +3111,9 @@ strong {
     line-height: 24px;
     width: 368px;
     padding-bottom: 0;
+  }
+  .contacts-item {
+    margin-top: 40px;
   }
 }
 
