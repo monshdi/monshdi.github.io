@@ -3000,6 +3000,21 @@ strong {
 }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1600px) {
+  .slider-wrap .slider-item {
+    margin-top: -330px;
+  }
+  .slider-wrap .slider-item__descr {
+    position: relative;
+    top: 480px;
+    left: 400px;
+    width: 500px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 100;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .main_head {
     background-position: right bottom;
@@ -3287,11 +3302,11 @@ strong {
     font-size: 22px;
   }
   .slider-wrap .slider-item {
-    margin-top: -182px;
+    margin-top: -142px;
   }
   .slider-wrap .slider-item__descr {
     position: relative;
-    top: 220px;
+    top: 240px;
     left: 40px;
     width: 180px;
     height: 142px;
