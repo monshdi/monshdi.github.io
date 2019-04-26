@@ -3332,5 +3332,34 @@ strong {
   }
 }
 
+@media (min-width: 320px) and (max-width: 450px) {
+  .slider-wrap .slider-item {
+    margin-top: -142px;
+  }
+  .slider-wrap .slider-item__descr {
+    position: relative;
+    top: 175px;
+    left: 40px;
+    width: 180px;
+    height: 142px;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 100;
+  }
+  .slider-wrap .slider-item__descr h3 {
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 12px;
+    padding-left: 10px;
+  }
+  .slider-wrap .slider-item__descr p {
+    display: block;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 10px 10px;
+    padding-right: 0;
+    margin-top: 18px;
+  }
+}
+
 /*==========  Mobile First  ==========*/
 /*# sourceMappingURL=main.css.map */
