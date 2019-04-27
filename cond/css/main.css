@@ -2574,7 +2574,7 @@ strong {
 }
 
 .main_head {
-  width: 100%;
+  max-width: 100%;
   padding: 65px 0;
   height: 900px;
   background: url(../img/top_bg.png) no-repeat center 120px/contain;
@@ -3333,8 +3333,11 @@ strong {
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
-  body {
-    overflow-x: hidden;
+  .top_content {
+    width: 100%;
+  }
+  .slider-section .section_heading {
+    padding: 10px 0;
   }
   .slider-wrap .slider-item {
     margin-top: -142px;
@@ -3361,6 +3364,15 @@ strong {
     padding: 10px 10px;
     padding-right: 0;
     margin-top: 18px;
+  }
+  .top-form {
+    margin-top: -80px;
+  }
+  .contacts {
+    padding-top: 60px;
+  }
+  .contacts-item {
+    font-size: 2.4rem;
   }
 }
 
