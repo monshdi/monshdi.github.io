@@ -3334,7 +3334,7 @@ strong {
 
 @media (min-width: 320px) and (max-width: 450px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .slider-wrap .slider-item {
     margin-top: -142px;
