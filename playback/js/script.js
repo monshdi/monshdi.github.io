@@ -34,7 +34,17 @@ window.addEventListener("DOMContentLoaded", function(){
                 }, 100);
             });
         };
+})
 
-        
+$(function(){
+
+    $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        cssEase: 'linear'
+    });
 
 })

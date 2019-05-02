@@ -599,7 +599,10 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	display: inline-block;
 	padding: 0;
 	transform-style: inherit;
+	height: 200px;
 	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .partfolio .contenier-fluid div h2 {
 	text-transform: uppercase;
@@ -615,12 +618,11 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 .desc_bg	{
 	position: absolute;
 	display: block;
-	width: 100%;
+	width: 0;
 	height: 100%;
 	top: 0;
 	left: 0;
 	background-color: rgba(255,255,255, .3);
-	opacity: 0;
 	transition: .4s ease;
 	z-index: 2;
 }
@@ -641,7 +643,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
 .partfolio .contenier-fluid div:hover .desc_bg {
-	opacity: 1;
+	width: 100%;
 }
 
 .partfolio .contenier-fluid div:hover .desc_head {
@@ -759,6 +761,16 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	bottom: -10px;
 	margin: 0 40px 20px 0;
 	z-index: 2;
+}
+
+.slider-item {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.slider-item img {
+	display: inline-block;
 }
 
 footer {
