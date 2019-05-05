@@ -2486,6 +2486,15 @@ html {
   max-height: 100% !important;
 }
 
+.cursor {
+  width: 30px;
+  height: 30px;
+  background-color: #f23025;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000000;
+}
+
 ::-webkit-input-placeholder {
   color: #666;
 }
@@ -2525,6 +2534,7 @@ body {
   overflow-x: hidden;
   color: #000;
   background-color: #f4f4f4;
+  cursor: none;
 }
 
 body input, body textarea {
