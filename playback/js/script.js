@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
         logoPlay.addEventListener('click', () => {
             modal.style.display = 'block';
+            modal.style.zIndex = '1000000';
             modalItem.innerHTML = `	<iframe src="https://www.youtube.com/embed/QC1EdMkV9Iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
             setTimeout(function(){
                 modal.classList.add('active-modal');
@@ -28,6 +29,7 @@ window.addEventListener("DOMContentLoaded", function(){
         for(let i = 0; i < portItem.length; i++){
             portItem[i].addEventListener('click', ()=> {
                 modal.style.display = 'block';
+                modal.style.zIndex = '1000000';
                 modalItem.innerHTML = `<iframe src="${videos[i]}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
                 setTimeout(function(){
                     modal.classList.add('active-modal');
@@ -45,7 +47,33 @@ $(function(){
         arrows: false,
         autoplay: true,
         autoplaySpeed: 1000,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
+
+    $(".form_top").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+    });
+    
+
 
 })

@@ -28,7 +28,7 @@
 
 	<!-- Шапка сайта -->
 
-	<div class="contenier-fluid header">
+	<div class="contenier-fluid header top-line">
 		<div class="logo animated fadeInUp">
 			<a href="index.html"><img class="logotype" src="img/logo.svg"><img class="logotext" src="img/logotext.svg"></a>
 		</div>
@@ -37,7 +37,7 @@
 		<button type="button" class="btn menu  animated fadeInUp" data-toggle="modal" data-target="#menuModal"><img src="img/menu.svg"></button>
 
 		<!-- Модальное окно Обратной связи -->
-		<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="form_top modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
 		  	<div class="modal-dialog" role="document">
 		    	<div class="modal-content">
 		      		<div class="modal-body">
@@ -50,19 +50,19 @@
 									<h1>Форма заявки</h1>
 								</div>
 								<div class="form-group col-md-6  animated fadeInUp">
-									<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ваше Имя">
+									<input type="text" class="form-control" name="user_name" id="name" aria-describedby="emailHelp" placeholder="Ваше Имя">
 								</div>
 								<div class="form-group col-md-6  animated fadeInUp">
-									<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Название компании">
+									<input type="text" class="form-control" name="company_name" id="name" aria-describedby="emailHelp" placeholder="Название компании">
 								</div>
 								<div class="form-group col-md-6  animated fadeInUp">
-									<input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Ваш телефон">
+									<input type="tel" class="form-control" name="user_phone" id="phone" aria-describedby="emailHelp" placeholder="Ваш телефон">
 								</div>
 								<div class="form-group col-md-6  animated fadeInUp">
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ваш e-mal">
+									<input type="email" class="form-control" name="user_email" id="email" aria-describedby="emailHelp" placeholder="Ваш e-mal">
 								</div>
 								<div class="form-group col-md-12  animated fadeInUp">
-									<textarea class="form-control" id="description" placeholder="Описание задачи" required rows="2"></textarea>
+									<textarea class="form-control" name="descr_work" id="description" placeholder="Описание задачи" required rows="2"></textarea>
 								</div>
 								<div class="form-group col-md-12  animated fadeInUp">
 									<button type="submit" class="btn animated fadeInUp">ОТПРАВИТЬ ЗАЯВКУ</button>
@@ -126,7 +126,7 @@
 <section class="aboutUs">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-12 col-sm-8 col-md-5">
 				<h1>МЫ КОМАНДА<br>PLAYBACK</h1>
 				<!-- <p>Вкладываем все силы и все время, чтобы сделать уникальный и качественный видеоконтент способный популяризировать Ваш бренд, увеличить продажи, сформировать и повысить имидж компании или просто зафиксировать самые памятные и важные моменты какого то события.</p> -->
 				<h2>Наша цель - создание качественного видео/фото контента, способного:</h2>
@@ -137,18 +137,7 @@
 					<li>создать памятную картинку вашего события</li>
 				</ul>
 				<button type="button" class="btn feedback  animated fadeInUp" data-toggle="modal" data-target="#feedbackModal">Заказать видео</button>
-			</div>
-			<div class="col-md-7">
-				<!-- <img src="photo/123.png"> -->
-				<form class="aboutUs_form">
-					<h2>Есть вопросы? <br> Закажите обратную связь</h2>
-					<label for="name">Ваше имя</label>
-					<input type="name">
-					<label for="tel">Номер телефона</label>
-					<input type="tel">
-					<input type="submit" value="Отправить" >
-				</form>
-			</div>
+			</div>			
 		</div>
 	</div>
 	<div class="triangle">
@@ -162,7 +151,7 @@
 	<div class="contenier-fluid">
 		<div class="col-6 col-md-8">
 			<div class="port_item one animated fadeInUp">
-				<div class="desc" style="background-image: url(photo/1.png)">
+				<div class="desc" style="background-image: url(photo/1.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">Реклама</h2>
@@ -170,7 +159,7 @@
 		</div>
 		<div class="col-6 col-md-4">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal2">
-				<div class="desc" style="background-image: url(photo/2.png)">
+				<div class="desc" style="background-image: url(photo/2.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">LIFE STYLE</h2>
@@ -178,7 +167,7 @@
 		</div>
 		<div class="col-6 col-md-6">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal3">
-				<div class="desc" style="background-image: url(photo/3.png)">
+				<div class="desc" style="background-image: url(photo/3.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">МЕРОПРИЯТИЯ</h2>
@@ -186,7 +175,7 @@
 		</div>
 		<div class="col-6 col-md-6">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal4">
-				<div class="desc" style="background-image: url(photo/4.png)">
+				<div class="desc" style="background-image: url(photo/4.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">СВАДЕБНОЕ ВИДЕО</h2>
@@ -194,7 +183,7 @@
 		</div>
 		<div class="col-6 col-md-4">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
-				<div class="desc" style="background-image: url(photo/6.png)">
+				<div class="desc" style="background-image: url(photo/5.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">DANCE VIDEO</h2>
@@ -202,7 +191,7 @@
 		</div>
 		<div class="col-6 col-md-4">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
-				<div class="desc" style="background-image: url(photo/6.png)">
+				<div class="desc" style="background-image: url(photo/6.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">презентационные видеоролики</h2>
@@ -210,7 +199,7 @@
 		</div>
 		<div class="col-6 col-md-4">
 			<div class="port_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
-				<div class="desc" style="background-image: url(photo/6.png)">
+				<div class="desc" style="background-image: url(photo/7.jpg)">
 					<div class="desc_bg"></div>
 				</div>
 				<h2 class="desc_head">корпоративные ролики</h2>
