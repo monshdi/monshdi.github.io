@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function(){
         logoPlay.addEventListener('click', () => {
             modal.style.display = 'block';
             modal.style.zIndex = '1000000';
-            modalItem.innerHTML = `	<iframe src="https://www.youtube.com/embed/QC1EdMkV9Iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            modalItem.innerHTML = `	<iframe src="https://www.youtube.com/embed/QC1EdMkV9Iw" width="100%" height="600px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
             setTimeout(function(){
                 modal.classList.add('active-modal');
                 document.body.style.overflow = 'hidden';
@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", function(){
             portItem[i].addEventListener('click', ()=> {
                 modal.style.display = 'block';
                 modal.style.zIndex = '1000000';
-                modalItem.innerHTML = `<iframe src="${videos[i]}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+                modalItem.innerHTML = `<iframe src="${videos[i]}" width="100%" height="600px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
                 setTimeout(function(){
                     modal.classList.add('active-modal');
                     document.body.style.overflow = 'hidden';
@@ -40,6 +40,16 @@ window.addEventListener("DOMContentLoaded", function(){
 })
 
 $(function(){
+
+    // Меню
+    $(window).scroll(function(){
+		let scrollDo = $(window).scrollTop();
+		if (scrollDo > 150 ) {
+			$('.top-line').css('background-color', '#000');
+		} else {
+            $('.top-line').css('background-color', 'rgba(0,0,0,0.2)');
+        };
+    });
 
     $('.slider').slick({
         slidesToShow: 4,
@@ -74,6 +84,13 @@ $(function(){
 		return false;
     });
     
+    let scrollBtn = $('.scroll');
 
+	scrollBtn.click(function(e){
+		e.preventDefault();
+		$('body,html').animate({
+			scrollTop : $(this.hash).offset().top - 240
+		}, 800)
+	});
 
 })
