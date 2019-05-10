@@ -22,6 +22,10 @@ body {
 	font-family: "Muller";
 }
 
+header {
+	position: relative;
+}
+
 a.active.focus,
 a.active:focus,
 a.focus,
@@ -63,6 +67,10 @@ outline-style: none!important;
 box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
+.triangle {
+	z-index: 1000;
+}
+
 
 
 /*Фоновое видео*/
@@ -97,6 +105,8 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
 .top-line {
+	position: fixed;
+	top: 0;
 	background: rgba(0,0,0,0.2);
 	transition: 0.5s;
 }
@@ -867,6 +877,63 @@ footer {
 
 .social_links a{
 	margin-right: 20px;
+}
+
+.offert {
+	position: relative;
+	width: 100%;
+	padding-top: 150px;
+	background-color: #000;
+}
+
+.offert_header {
+	font-size: 45px;
+	line-height: 65px;
+}
+
+.offert_text {
+	margin-top: 80px;
+	color: gray;
+	margin-bottom: 60px;
+	width: 100%;
+	height: 60vh;
+	overflow-x: scroll;
+	border-right: 1px solid #fff;
+	padding-right: 60px;
+}
+
+.offert_text h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 65px;
+	padding-bottom: 20px;
+}
+
+.offert_text p {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.offert_text::-webkit-scrollbar {
+	width: 10px;
+}
+
+.offert_text::-webkit-scrollbar-thumb {
+	background-color: #fff;
+}
+.offert_text::-webkit-scrollbar-corner {
+	width: 0;
+	height: 0;
+}
+
+.offert .triangle h1 {
+	font-size: 3vw;
+	text-align: left;
+	font-weight: 100;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	margin: 0 0 20px 40px;
 }
 /* @media (max-width: 760px) {
 
