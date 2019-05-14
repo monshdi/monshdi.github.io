@@ -1,3 +1,71 @@
+$(function(){
+
+    // Меню
+    $(window).scroll(function(){
+		let scrollDo = $(window).scrollTop();
+		if (scrollDo > 150 ) {
+			$('.top-line').css('background-color', '#000');
+		} else {
+            $('.top-line').css('background-color', 'rgba(0,0,0,0.2)');
+        };
+    });
+
+    $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+
+    $('.case-slider').slick({
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
+
+    $(".form_top").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+    });
+    
+    let scrollBtn = $('.scroll');
+
+	scrollBtn.click(function(e){
+		e.preventDefault();
+		$('body,html').animate({
+			scrollTop : $(this.hash).offset().top - 240
+		}, 800)
+	});
+
+})
+
 window.addEventListener("DOMContentLoaded", function(){
 
     // Модальное окно
@@ -76,64 +144,3 @@ let slides = document.querySelectorAll('.case_block_slider_item'),
     
 
 
-$(function(){
-
-    // Меню
-    $(window).scroll(function(){
-		let scrollDo = $(window).scrollTop();
-		if (scrollDo > 150 ) {
-			$('.top-line').css('background-color', '#000');
-		} else {
-            $('.top-line').css('background-color', 'rgba(0,0,0,0.2)');
-        };
-    });
-
-    $('.slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        cssEase: 'linear',
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-    });
-
-    $(".form_top").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-    });
-    
-    let scrollBtn = $('.scroll');
-
-	scrollBtn.click(function(e){
-		e.preventDefault();
-		$('body,html').animate({
-			scrollTop : $(this.hash).offset().top - 240
-		}, 800)
-	});
-
-})

@@ -730,7 +730,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	margin-left: 254px;
 }
 
-.case_block p {
+.case_block .sub_text {
 	margin-left: 254px;
 }
 
@@ -1093,7 +1093,7 @@ footer {
 	height: 0;
 }
 
-.offert .triangle h1 {
+.triangle-head {
 	font-size: 3vw;
 	text-align: left;
 	font-weight: 100;
@@ -1101,6 +1101,63 @@ footer {
 	bottom: 0;
 	right: 20px;
 	margin: 0 0 20px 40px;
+}
+
+.case-content{
+	position: relative;
+	padding-top: 180px;
+	background-color: #000;
+}
+
+.case-content h2 {
+	font-size: 40px;
+	color: #6e6e6e;
+	margin-bottom: 60px;
+}
+
+.case-content h4 {
+	font-size: 35px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	color: #6e6e6e
+}
+
+.case-content ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.case-content li {
+	position: relative;
+	margin-top: 20px;
+	font-size: 22px;
+}
+
+.case-content li:after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	left: -35px;
+	width: 20px;
+	height: 2px;
+	background-color: #6e6e6e;
+}
+
+.case-content p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.case-slider {
+	width: 100%;
+	margin-top: 60px;
+}
+
+.case-slider-item {
+	width: 100%;
+}
+.case-slider-item img {
+	width: 100%;
 }
 /* @media (max-width: 760px) {
 
