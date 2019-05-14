@@ -742,22 +742,30 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 
 .case_block_slider{
 	position: relative;
-	display: flex;
-	width: 100%;
+	width: 80%;
 	height: 600px;
-	overflow: hidden;
 	margin-top: -40px;
 }
 
-.case_block_slider_item{
-	position: relative;
-	margin-left: -80px;
-	width: 60%;
-	z-index: 1;
-	background-repeat: no-repeat;
+.case_slider_item {
+	margin: 70px 20px;
+	height: 400px;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center center;
-	transform: scale(.8)
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+
+.slick-active {
+	transition: 0.3s;
+}
+
+
+.case_slider_item[tabindex="-1"]{
+	transform: scale(.9);
+	transition: 0.3s;
+	z-index: -1;
 }
 
 .case_block_slider_item_descr {
@@ -767,9 +775,9 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	height: 100%;
 	top: 0;
 	left: 0;
-	padding-top: 140px;
-	padding-left: 90px;
-	opacity: 0;
+	padding-top: 90px;
+	padding-left: 70px;
+	/* opacity: 0; */
 }
 
 .case_block_slider_item_descr h3 {
@@ -786,7 +794,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 
 .detail-btn{
 	position: absolute;
-	right: 95px;
+	left: 75px;
 	bottom: 60px;
 	font-size: 12px;
 	color: #fff;
@@ -835,13 +843,11 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 
 .arrows {
 	position: absolute;
-	color: #fff;
-	font-size: 20px;
 	bottom: -20px;
-	left: 50px;
+	left: -10px;
 	margin: 0;
 	display: flex;
-	width: 90%;
+	width: 80%;
 	align-items: center;
 	justify-content: space-around;
 	cursor: pointer;
