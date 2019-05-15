@@ -45,7 +45,23 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        nextArrow: $('.next'),
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                }
+            }
+        ]
     });
 
     $(".form_top").submit(function() { //Change
