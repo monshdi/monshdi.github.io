@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content=width=device-width initial-scale=1>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="main/animate.css">
+	<link rel="stylesheet" type="text/css" href="main/main.css">
+
+
+	<title>playback</title>
+
+</head>
+<body>
+		<header class="min-header">			
+				<div class="contenier-fluid header top-line">
+					<div class="logo animated fadeInUp">
+						<a href="index.html"><img class="logotype" src="img/logo.svg"><img class="logotext" src="img/logotext.svg"></a>
+					</div>
+			
+					<button type="button" class="btn feedback  animated fadeInUp" data-toggle="modal" data-target="#feedbackModal">Заказать видео</button>
+					<button type="button" class="btn menu  animated fadeInUp" data-toggle="modal" data-target="#menuModal"><img src="img/menu.svg"></button>
+			
+					<!-- Модальное окно Обратной связи -->
+					<div class="form_top modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+								  <div class="modal-body">
+									  <a href="index.html"><img class="logotype" src="img/logowhite.svg"></a>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/closewhite.svg"></button>
+			
+									<div class="contenier-fluid form" >
+										<form novalidate>
+											<div class="form-group col-md-12  animated fadeInUp">
+												<h1>Форма заявки</h1>
+											</div>
+											<div class="form-group col-md-6  animated fadeInUp">
+												<input type="text" class="form-control" name="user_name" id="name" aria-describedby="emailHelp" placeholder="Ваше Имя">
+											</div>
+											<div class="form-group col-md-6  animated fadeInUp">
+												<input type="text" class="form-control" name="company_name" id="name" aria-describedby="emailHelp" placeholder="Название компании">
+											</div>
+											<div class="form-group col-md-6  animated fadeInUp">
+												<input type="tel" class="form-control" name="user_phone" id="phone" aria-describedby="emailHelp" placeholder="Ваш телефон">
+											</div>
+											<div class="form-group col-md-6  animated fadeInUp">
+												<input type="email" class="form-control" name="user_email" id="email" aria-describedby="emailHelp" placeholder="Ваш e-mal">
+											</div>
+											<div class="form-group col-md-12  animated fadeInUp">
+												<textarea class="form-control" name="descr_work" id="description" placeholder="Описание задачи" required rows="2"></textarea>
+											</div>
+											<div class="form-group col-md-12  animated fadeInUp">
+												<button type="submit" class="btn animated fadeInUp">ОТПРАВИТЬ ЗАЯВКУ</button>
+												<p>Нажимая на кнопку, вы даете согласие на <a href="offert.html">обработку персональных данных</a> и<br> соглашаетесь с <a href="offert.html">политикой конфиденциальности</a></p>
+											</div>
+			
+										</form>
+									</div>
+								  </div>
+								  <div class="modal-footer">
+									<div class="social_links">
+									<a href="https://vk.com/playbackkem" target="_blank">VK</a>
+									<a href="https://www.instagram.com/play_back.tv/" target="_blank">Instagram</a>
+									<a href="https://www.youtube.com/channel/UCfoBQ8WIyTC8zG38EO17Gaw?view_as=subscriber" target="_blank">YouTube</a>
+									</div>
+								</div>
+							</div>	
+						  </div>
+					</div>
+			
+					<!-- Модальное окно меню -->
+			
+					<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content menu-modal">
+								  <div class="modal-body">
+									  <a href="index.html"><img class="logotype" src="img/logowhite.svg"></a>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/closewhite.svg"></button>
+			
+									<div class="contenier-fluid">
+										<div class="col-md-4  animated fadeInUp">
+											<a href="index.html">Главная</a>
+										</div>
+										<div class="col-md-4  animated fadeInUp">
+											<a href="cases.html">Кейсы</a>
+										</div>
+										<div class="col-md-4  animated fadeInUp">
+											<a href="portfolio.html">Портфолио</a>
+										</div>
+									</div>
+								  </div>
+								<div class="social_links modal-footer">
+									<div class="social_links">
+										<a href="https://vk.com/playbackkem" target="_blank">VK</a>
+										<a href="https://www.instagram.com/play_back.tv/" target="_blank">Instagram</a>
+										<a href="https://www.youtube.com/channel/UCfoBQ8WIyTC8zG38EO17Gaw?view_as=subscriber" target="_blank">YouTube</a>
+										</div>
+								</div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</header>
+<main class="portfolio-page">
+	<div class="partfolio">
+		<div class="portfolio-head">
+				<div class="portfolio-head-text">
+						<h1>портфолио</h1>
+				</div>
+		</div>
+		<div class="contenier-fluid">
+			<div class="col-6 col-md-8">
+				<div class="port-page_item one animated fadeInUp">
+					<div class="desc" style="background-image: url(img/portfolio/1.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">JUST SMOKE TOBACCO</h2>
+				</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal2">
+					<div class="desc" style="background-image: url(img/portfolio/2.png)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">3/4 TREQUARTI | WINE BAR & KITCHEN</h2>
+				</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal3">
+					<div class="desc" style="background-image: url(img/portfolio/3.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">ONE DAY IN SHEREGESH</h2>
+				</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal4">
+					<div class="desc" style="background-image: url(img/portfolio/4.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">Владислав и Анастасия | WEDDING 01.09.18</h2>
+				</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+					<div class="desc" style="background-image: url(img/portfolio/5.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">Altay_Trip #PlayBackTv</h2>
+				</div>
+			</div>
+			<div class="col-6 col-md-6">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+					<div class="desc" style="background-image: url(img/portfolio/6.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">Migos - Gang Gang | Dance Video</h2>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+					<div class="desc" style="background-image: url(img/portfolio/7.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">True love story #МашаПаша.</h2>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12">
+					<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+						<div class="desc" style="background-image: url(img/portfolio/8.jpg)">
+							<div class="desc_bg"></div>
+						</div>
+						<h2 class="desc_head">MORNING IN THE MOUNTAINS! SPECIALLY FOR @KLADEZ_TRAV</h2>
+					</div>
+				</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+					<div class="desc" style="background-image: url(img/portfolio/9.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">FLASHBACK to MAYAK | party by LasKvibas</h2>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="port-page_item one animated fadeInUp" data-toggle="modal" data-target="#Modal6">
+					<div class="desc" style="background-image: url(img/portfolio/10.jpg)">
+						<div class="desc_bg"></div>
+					</div>
+					<h2 class="desc_head">Novosibirsk KFC_BATTLE - L'One.</h2>
+				</div>
+			</div>
+		</div>			
+		</div>
+	</div>
+</main>
+
+<!-- Модальное окно видео -->
+<div class="modal-video">
+		<div class="close-btn"><img src="img/closewhite.svg" alt="close"></div>
+		<div class="modal-video_item">
+		</div>
+	</div>
+
+<footer>
+		<div class="main_footer container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="social_links">
+						<h2 class="footer_head">Следите за нами</h2>
+					<a href="https://vk.com/playbackkem" target="_blank">VK</a>
+					<a href="https://www.instagram.com/play_back.tv/" target="_blank">Instagram</a>
+					<a href="https://www.youtube.com/channel/UCfoBQ8WIyTC8zG38EO17Gaw?view_as=subscriber" target="_blank">YouTube</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<h2 class="footer_head">Расположение</h2>
+					<p>
+						г.Кемерово<br>
+						пр.Советский 2/8<br>
+						офис 604<br>
+					</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<h2 class="footer_head">Контакты</h2>
+					<a class="contact" href="mailto:playbackkem@gmail.com" target="_blank">playbackkem@gmail.com</a>
+					<a class="contact" href="tel:+79235303020" target="_blank">+7-923-530-30-20</a>
+				</div>
+				<div class="foot_information col-12 col-sm-6 col-md-3">
+					<h2 class="footer_head">Информация</h2>
+					<a class="scroll" href="#aboutUs">О компании</a>
+					<a href="/">О размещении информации</a>
+				</div>
+			</div>
+		</div>
+	
+	</footer>
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+<script type="text/javascript">
+</script>
+
+
+</body>
+</html>

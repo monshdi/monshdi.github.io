@@ -584,8 +584,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	font-size: 0;
 }
 .aboutUs .container-fluid div {
-	/* display: inline-block; */
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 }
 .aboutUs .container-fluid .col-md-5 {
 	font-size: 18px;
@@ -760,7 +759,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 
 .case_block_slider_item_descr {
 	position: absolute;
-	background-color: rgba(0,0,0, .75);
+	background-color: rgba(0,0,0, .5);
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -782,7 +781,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	width: 256px;
 }
 
-.detail-btn{
+.case_block_slider_item_descr .detail-btn{
 	position: absolute;
 	left: 75px;
 	bottom: 60px;
@@ -794,7 +793,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	transition: 0.4s;
 }
 
-.detail-btn:hover{
+.case_block_slider_item_descr .detail-btn:hover{
 	text-decoration: none;
 	color: #000;
 	background-color: #fff;
@@ -809,6 +808,17 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	align-items: center;
 	justify-content: space-around;
 	cursor: pointer;
+}
+
+.arrows svg {
+	width: 50px;
+	fill: #6e6e6e;
+	transition: 0.3s;
+}
+
+.arrows svg:hover{
+	fill: #fff;
+	transform: scale(1.1);
 }
 
 .partfolio {
@@ -835,7 +845,7 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 .partfolio .contenier-fluid div h2 {
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 18px;
+	font-size: 20x;
 	font-weight: 100;
 	position: absolute;
 	opacity: 0;
@@ -928,7 +938,27 @@ box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 	background: #fff;
 	color: #191919;
 }
-.more
+
+.portfolio-page{
+}
+.portfolio-head {
+	width: 100%;
+	height: 500px;
+	background: url(../img/playback-Banner.jpg) no-repeat center center / cover;					
+}
+
+.portfolio-head-text {
+	background-color: rgba(0,0,0, .3);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	/* text-transform: uppercase; */
+}
+
+.portfolio-head-text h1 {
+	font-size: 80px;
+	line-height: 500px;
+}
 @media (min-width: 576px) {
 	.partfolio .modal-dialog {
 	    max-width: 80%;
@@ -1009,7 +1039,7 @@ footer {
 	transition: 0.3s;.
 }
 
-.offert {
+.offert, .cases {
 	position: relative;
 	width: 100%;
 	padding-top: 150px;
@@ -1056,6 +1086,62 @@ footer {
 .offert_text::-webkit-scrollbar-corner {
 	width: 0;
 	height: 0;
+}
+
+.cases_content {
+	height: 100vh;
+	overflow-y: scroll; 
+}
+
+.cases_header {
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 65px;
+}
+.cases_item{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 80px;
+	margin-bottom: 200px;
+	position: relative;
+	width: 100%;
+}
+
+.cases-item_img {
+	width: 60%;
+	height: 400px;
+	background-size: cover;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.cases-item_text {
+	position: relative;
+	text-align: right;
+	width: 40%;
+	padding-left: 30px;
+}
+
+.cases-item_text .detail-btn {
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	font-size: 14px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 5px 30px;
+	transition: 0.4s;
+}
+
+.cases-item_text .detail-btn:hover{
+	text-decoration: none;
+	color: #000;
+	background-color: #fff;
+}
+
+.cases-item_text h3	{
+	margin-bottom: 60px;
 }
 
 .triangle-head {
@@ -1113,6 +1199,10 @@ footer {
 	margin-bottom: 40px;
 }
 
+.case-slider-wrap{
+	position: relative;
+}
+
 .case-slider {
 	width: 100%;
 	margin-top: 60px;
@@ -1128,8 +1218,36 @@ footer {
 	height: 100%;
 }
 
+.case-arrows .next {
+	position: absolute;
+	top: 50%;
+	right: -80px;
+}
+
+.case-arrows .prev {
+	position: absolute;
+	left: -80px;
+	top: 50%;
+}
+
+.case-arrows svg {
+	width: 50px;
+	fill: #6e6e6e;
+	transition: 0.3s;
+}
+
+.case-arrows svg:hover{
+	fill: #fff;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.buttons_wrap{
+	margin-top: 60px;
+}
+
 .case-btn{
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 	border: 1px solid #fff;
 	border-radius: 5px;
@@ -1278,6 +1396,33 @@ footer {
 	}
 
 	.arrows{
+		display: none;
+	}
+
+	.cases_item{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	
+	.cases-item_img {
+		width: 100%;
+		margin-bottom: 40px;
+		background-position: center center;
+	}
+	
+	.cases-item_text {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.cases-item_text .detail-btn{
+		bottom: -80px;
+		right: calc(50% - 70px);
+	}
+
+	.triangle-head{
 		display: none;
 	}
 }
