@@ -28,27 +28,39 @@
 	<header class="header">
 		<div class="container">
 			<div class="header_top-line">
-				<div class="header_top-line__mnu">
+				<!-- <div class="header_top-line__mnu">
 					<span><img src="img/burger.png" alt="burger"></span>
 					<p>Меню</p>
-				</div>
+				</div> -->
 				<div class="header_top-line__logo">
 					<a href="/"><img src="img/logo.png" alt="Сайт Маркет"></a>
 				</div>
 				<div class="header_top-line__contacts">
 					<div class="adress">Кемерово пр. Советский 2/8 оф. 306</div>
-					<div class="phone">Телефон: 8-800-555-35-35</div>
+					<div class="phone">Телефон: <a href="tel: +79234864665">+7-923-486-4665</a></div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="top_block">
 		<div class="container">
+				<div class="top_block_form">
+					<form class="top-form">
+						<div class="top_block_form_inputs">
+							<input type="text" name="top_form_tel" placeholder="перезвоните мне на этот номер" required>
+							<button><img src="img/arrow.png" alt="Перезвоните мне"></button>
+						</div>
+						<div class="form-checkbox">
+							<input type="checkbox" id="okay_offert" name="okay_offert" required>
+							<label for="okay_offert">Я согласен(на) на обработку <a href="#">персональных данных</a></label>
+						</div>
+						
+					</form>
+				</div>
 			<div class="top_block__content">
 				<p>сайты под ключ за неделю</p>
-				<h1>Лендинг-пейдж <br>
-					за 5 рабочих дней <br>
-					от 15 000 рублей</h1>
+				<h1>Лендинг от 15000 за 3 дня</h1>
+				<h2>Многостраничный сайт под ключ за 2 недели.</h2>
 				<strong>
 					<p>Более 5 лет мы успешно реализуем <br> проекты различной сложности для <br> наших клиентов.</p>
 				</strong>
@@ -119,7 +131,7 @@
 		</div>
 	</section>
 
-	<section class="promotion">
+	<!-- <section class="promotion">
 			<div class="section_head">
 				<h2>продвижение</h2>
 				<span>Настраиваем контекстную рекламу <br> и оптимизируем ваши сайты под поисковые движки.</span>
@@ -142,7 +154,7 @@
 					<div class="promotion_blocks_item_descr">Анализируем ваш <br> продукт с точки зрения потребителя, собираем информацию о вашей целевой аудитории</div>
 				</div>
 			</div>
-	</section>
+	</section> -->
 
 	<section class="advert">
 		<div class="advert_wrap">
@@ -160,6 +172,47 @@
 			<div class="right_content"></div>
 		</div>
 	</section>
+
+	<section class="form-advert">
+		<div class="form-advert_heading">
+			<h2>заказать сайт</h2>
+		</div>
+		<form>
+			<div class="form-contacts">
+				<div class="form-contacts_name">
+					<label for="advert_user_name">Вас зовут:</label>
+					<input type="text" id="advert_user_name" name="advert_user_name" required>
+				</div>
+				<div class="form-contacts_phone">
+					<label for="advert_user_name">Телефон:</label>
+					<input type="tel" id="advert_user_phone" name="advert_user_phone" required>
+				</div>
+				<div class="form-contacts_phone">
+					<label for="advert_user_email">E-mail:</label>
+					<input type="text" id="advert_user_email" name="advert_user_email" required>
+				</div>
+			</div>
+			<div class="form-checkbox">
+				<input type="checkbox" id="okay_offert" name="okay_offert">
+				<label for="okay_offert">Я согласен(на) на обработку <a href="#">персональных данных</a></label>
+			</div>
+			<input class="btn-mail" type="submit" value="оставить заявку">
+		</form>
+	</section>
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="main-footer_line">
+				<div class="main-footer_line__logo">
+					<a href="/"><img src="img/logo_wh.png" alt="Сайт Маркет"></a>
+				</div>
+				<div class="main-footer_line__contacts">
+					<div class="adress">Кемерово пр. Советский 2/8 оф. 306</div>
+					<div class="phone">Телефон: <a href="tel: +79234864665">+7-923-486-4665</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
 
 	<script src="js/scripts.min.js"></script>
