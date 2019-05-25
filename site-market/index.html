@@ -17,6 +17,8 @@
 	<meta name="theme-color" content="#000">
 
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 
 </head>
 
@@ -39,14 +41,9 @@
 					<div class="adress">Кемерово пр. Советский 2/8 оф. 306</div>
 					<div class="phone">Телефон: <a href="tel: +79234864665">+7-923-486-4665</a></div>
 				</div>
-			</div>
-		</div>
-	</header>
-	<main class="top_block">
-		<div class="container">
-				<div class="top_block_form">
+				<div class="header_top-line__form">
 					<form class="top-form">
-						<div class="top_block_form_inputs">
+						<div class="header_top-line__form_inputs">
 							<input type="text" name="top_form_tel" placeholder="перезвоните мне на этот номер" required>
 							<button><img src="img/arrow.png" alt="Перезвоните мне"></button>
 						</div>
@@ -57,27 +54,27 @@
 						
 					</form>
 				</div>
+			</div>
+		</div>
+	</header>
+	<main class="top_block">
+		<div class="container">
 			<div class="top_block__content">
 				<p>сайты под ключ за неделю</p>
-				<h1>Лендинг от 15000 за 3 дня</h1>
-				<h2>Многостраничный сайт под ключ за 2 недели.</h2>
-				<strong>
-					<p>Более 5 лет мы успешно реализуем <br> проекты различной сложности для <br> наших клиентов.</p>
-				</strong>
-				<div class="top_block__content_works">
-					<div class="top_block__content_works_item">
-						<div class="round"><img src="img/dev.png" alt="РАЗРАБОТКА САЙТОВ"></div>
-						<strong>РАЗРАБОТКА САЙТОВ</strong>
-					</div>
-					<div class="top_block__content_works_item">
-						<div class="round"><img src="img/promotion.png" alt="ПРОДВИЖЕНИЕ САЙТОВ"></div>
-						<strong>ПРОДВИЖЕНИЕ САЙТОВ</strong>
-					</div>
-					<div class="top_block__content_works_item">
-						<div class="round"><img src="img/maintenance.png" alt="СОПРОВОЖДЕНИЕ САЙТОВ"></div>
-						<strong>СОПРОВОЖДЕНИЕ  САЙТОВ</strong>
-					</div>
+				<h1>Лендинг-пейдж <br>
+					за 5 рабочих дней <br>
+					от 15 000 рублей</h1>
+				<div class="top_block__content_list-questions">
+					<ul>
+						<li>Вы хотите расширить границы своего бизнеса и открыть представительство компании в интернете</li>
+						<li>Вы нацелены на быстрый результат и пока не готовы к серьезным вложениям? </li>
+						<li>Вы ищете гибкое решение, которое позволит вам развивать свой сайт с появлением новых потребностей компании?</li>
+					</ul>
 				</div>
+				<div class="top_block__content_top-btn">
+					<a href="#" class="accent-btn">оставить заявку</a>
+				</div>
+				
 			</div>
 		</div>
 		<div class="laptop"></div>
@@ -199,6 +196,35 @@
 			<input class="btn-mail" type="submit" value="оставить заявку">
 		</form>
 	</section>
+	
+	<section class="portfolio">
+		<div class="portfolio-wrap">
+			<div class="section_head">
+				<h2>портфолио</h2>
+				<span>Некоторые работы за прошедшие полгода</span>
+			</div>
+			<div class="portfolio-wrap_slider">
+				<div class="portfolio-wrap_slider_arrow-prev">предидущий</div>
+				<div class="portfolio-wrap_slider-box">
+					<div class="slider-item">
+						<div class="slider-item-descr">
+							<h3>Сайт для команды PlayBackTV</h3>
+							<a href="#">www.playbacktv.ru</a>
+						</div>
+						<img src="img/portfolio/playback.jpg" alt="playback">
+					</div>
+					<div class="slider-item">
+							<div class="slider-item-descr">
+								<h3>Сайт для сервисного центра "Телефтелье"</h3>
+								<a href="#"></a>
+							</div>
+						<img src="img/portfolio/teleatelbe.jpg" alt="teleatelbe">
+					</div>
+				</div>
+				<div class="portfolio-wrap_slider_arrow-next">следующий</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="main-footer">
 		<div class="container">
@@ -216,6 +242,8 @@
 	
 
 	<script src="js/scripts.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+
 
 </body>
 </html>
