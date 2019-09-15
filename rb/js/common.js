@@ -1,15 +1,21 @@
 $(function() {
 
-	// Картинки кругом
-	let num = 8; // Число картинок
-	let wrap = 245; // Размер "холста" для расположения картинок
-	let radius = 340; // Радиус нашего круга
+	$(window).scroll(function(){
+		let scrollDo = $(window).scrollTop();
+		if (scrollDo > 350 && scrollDo < 3500) {
+			$('.callback-btn').addClass('active-btn');
+		} else {
+			$('.callback-btn').removeClass('active-btn');
+		}
+	})
 
-	for ( i=0; i<num; i++ ){
-    let f = 2 / num * i * Math.PI;  // Рассчитываем угол каждой картинки в радианах
-    let left = wrap + radius * Math.sin(f) + 'px';
-    let top = wrap + radius * Math.cos(f) + 'px';
-    $('.advant_items img').eq(i).css({'top':top,'left':left}); // Устанавливаем значения каждой картинке
-  }
+	let scrollMnu = $('.scroll');
+
+	scrollMnu.click(function(e){
+			e.preventDefault();
+			$('body, html').animate({
+				scrollTop : $(this.hash).offset().top - 80
+			}, 600)
+	})
 
 });

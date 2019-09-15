@@ -41,9 +41,10 @@
 				<i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79996496827">+7 999 649 68 27</a>
 			</div>
 			<div class="main-head_top-line_social">
-				<a href="https://www.instagram.com/r.b.auto/" target='_blank'><img src="img/Header_img/insta.png" alt=""></a>
-				<a href="viber://pa/info?uri=<+79996496827>" target='_blank'><img src="img/Header_img/viber_white.png" alt=""></a>
-				<a href="https://vk.com/rbautorus" target='_blank'><img src="img/Header_img/VK_white.png" alt=""></a>
+				<a href="https://www.instagram.com/r.b.auto/" target='_blank'><i class="fab fa-instagram" aria-hidden="true"></i></a>
+				<a href="viber://pa/info?uri=<+79996496827>" target='_blank'><i class="fab fa-viber" aria-hidden="true"></i></a>
+				<a href="https://vk.com/rbautorus" target='_blank'><i class="fab fa-vk" aria-hidden="true"></i></a>
+				<a href="/" target='_blank'><i class="fab fa-whatsapp"></i></a>
 			</div>
 		</div>
 	</header>
@@ -52,12 +53,12 @@
 	<div class="sidebar">
 		<nav class="main-nav">
 			<ul>
-				<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
-				<li><a href="/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Преимущества</a></li>
-				<li><a href="/"><i class="fa fa-th-list" aria-hidden="true"></i>Как заказать?</a></li>
-				<li><a href="/"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Соцсети</a></li>
-				<li><a href="/"><i class="fa fa-comments" aria-hidden="true"></i>Отзывы</a></li>
-				<li><a href="/"><i class="fa fa-mobile" aria-hidden="true"></i>Контакты</a></li>
+				<li><a class="scroll" href="#header"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+				<li><a class="scroll" href="#advant"><i class="fa fa-plus-circle" aria-hidden="true"></i>Преимущества</a></li>
+				<li><a class="scroll" href="#howOrder"><i class="fa fa-th-list" aria-hidden="true"></i>Как заказать?</a></li>
+				<li><a class="scroll" href="#social"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Соцсети</a></li>
+				<li><a class="scroll" href="#comments"><i class="fa fa-comments" aria-hidden="true"></i>Отзывы</a></li>
+				<li><a class="scroll" href="#contacts"><i class="fa fa-mobile" aria-hidden="true"></i>Контакты</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -66,11 +67,11 @@
 <!-- КНОПКА ЗАКАЗАТЬ ЗВОНОК -->
 
 <!-- КНОПКА ЗАКАЗАТЬ ЗВОНОК КОНЕЦ-->
-	<section class="main-section">
+	<section class="main-section" id="header">
 		<div class="main-section_logo">
 			<a href="/"><img src="img/logolp.png" alt=""></a>
 		</div>
-		<div class="main-section_form">
+		<div class="callback-form">
 			<form>
 				<label for="user_name">ФИО</label>
 				<input type="text" id="user_name" name="user_name" required/>
@@ -98,29 +99,147 @@
 		</div>
 	</section>
 
-	<section class="advant">
+	<section class="advant" id="advant">
 		<div class="advant_items">
-			<img src="/img/Block_2/Holl.png" alt="">
-      <img src="/img/Block_2/ev.png" alt="">
-      <img src="/img/Block_2/ip.png" alt="">
-      <img src="/img/Block_2/lfo.png" alt="">
-      <img src="/img/Block_2/Holl.png" alt="">
-      <img src="/img/Block_2/lp.png" alt="">
-      <img src="/img/Block_2/nc.png" alt="">
-      <img src="/img/Block_2/vtk.png" alt="">
+      <div class="advant_items-left">
+      	<img src="/img/Block_2/lp.png" alt="">
+      	<img class="round-left" src="/img/Block_2/nc.png" alt="">
+      	<img src="/img/Block_2/vtk.png" alt="">
+      </div>
+
+      <div class="advant_items-right">
+      	<img src="/img/Block_2/ev.png" alt="">
+      	<img class="round-right" src="/img/Block_2/ip.png" alt="">
+      	<img src="/img/Block_2/lfo.png" alt="">
+      </div>
+		</div>
+		<div class="advant_items-mob">
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/lp_mob.png" alt=""><p>Лучшие поставщики</p>
+			</div>
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/nc_mob.png" alt=""><p>Низкие цены</p>
+			</div>
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/vtk_mob.png" alt=""><p>Выбор транспортной компании</p>
+			</div>
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/ev_mob.png" alt=""><p>Экономия времени</p>
+			</div>
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/ip_mob.png" alt=""><p>Индивидуальный подход</p>
+			</div>
+			<div class="advant_items-mob-item">
+				<img src="img/Block_2/lfo_mob.png" alt=""><p>Любая форма оплаты</p>
+			</div>
 		</div>
 	</section>
 
 	<section class="products">
 		<div class="products_item">
-			<a href="/" class="products_item-btn">ДВС и КПП</a>
-			<a href="/" class="products_item-btn">Запчасти для ТО</a>
-			<a href="/" class="products_item-btn">Кузовные запчасти</a>
-			<a href="/" class="products_item-btn">Элементы ходовой части</a>
+			<a href="/" class="products_item-btn" data-toggle="modal" data-target="#dvsModal">ДВС и КПП</a>
+			<a href="/" class="products_item-btn" data-toggle="modal" data-target="#toModal">Запчасти для ТО</a>
+			<a href="/" class="products_item-btn" data-toggle="modal" data-target="#kuzModal">Кузовные запчасти</a>
+			<a href="/" class="products_item-btn" data-toggle="modal" data-target="#hodModal">Элементы ходовой части</a>
 		</div>
+		<!-- Modal  ДВС и КПП-->
+		<div class="modal fade" id="dvsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">ДВС и КПП</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		         <ul class="ul_modal">
+				            <li><img src="img/RB_katalog/dviagtel.png" alt=""><p>Двигатели от 15 000 р.</p></li>
+				            <li><img src="img/RB_katalog/KPP.png" alt=""><p>КПП от 5 000 р.</p></li>
+				        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-toggle="modal" data-target="#callbackModal"	 class="btn submit-btn">Заказать</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal  Запчасти для ТО-->
+		<div class="modal fade" id="toModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Запчасти для ТО</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		         <ul class="ul_modal">
+				            <li><img src="img/RB_katalog/Kolodki.png" alt=""><p>Колодки&nbsp;от&nbsp;300&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/Filtri.png" alt=""><p>Фильтры&nbsp;от&nbsp;150&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/Remni.png" alt=""><p>Ремни&nbsp;от&nbsp;100&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/Sveci.png" alt=""><p>Свечи&nbsp;от&nbsp;100&nbsp;р.</p></li>
+				        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-toggle="modal" data-target="#callbackModal" class="btn submit-btn">Заказать</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal  Кузовные запчасти-->
+		<div class="modal fade" id="kuzModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Кузовные запчасти</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		         <ul class="ul_modal">
+				            <li><img src="img/RB_katalog/Fari.png" alt=""><p>Фары&nbsp;и&nbsp;Оптика<br>от&nbsp;300&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/bamper.png" alt=""><p>Бамперы&nbsp;от&nbsp;900&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/dver.png" alt=""><p>Крылья&nbsp;и&nbsp;Двери<br>от&nbsp;900&nbsp;р.</p></li>
+				            <li><img src="img/RB_katalog/kapot.png" alt=""><p>Капоты&nbsp;от&nbsp;1000&nbsp;р.</p></li>
+				        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-toggle="modal" data-target="#callbackModal" class="btn submit-btn">Заказать</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal  Элементы ходовой части-->
+		<div class="modal fade" id="hodModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Элементы ходовой части</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		         <ul class="ul_modal">
+		            <li><img src="img/RB_katalog/amortisator.png" alt=""><p>Амортизаторы&nbsp;от&nbsp;900&nbsp;р.</p></li>
+		            <li><img src="img/RB_katalog/podship.png" alt=""><p>Подшипники&nbsp;и&nbsp;Ступицы<br>от&nbsp;200&nbsp;р.</p></li>
+		            <li><img src="img/RB_katalog/shurs.png" alt=""><p>Шрусы&nbsp;и&nbsp;Полуочи<br>от&nbsp;1200&nbsp;р.</p></li>
+		            <li><img src="img/RB_katalog/stoyki.png" alt=""><p>Стойки&nbsp;стабилизатора&nbsp;<br>и&nbsp;Шаровые<br>от&nbsp;300&nbsp;р.</p></li>
+		          </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" data-toggle="modal" data-target="#callbackModal" class="btn submit-btn">Заказать</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 	</section>
 
-	<section class="how-work">
+	<section class="how-work" id="howOrder">
 		<ul>
 			<li><img src="img/Block_3/zv.png" alt=""></li>
 			<li><img src="img/Block_3/pdc.png" alt=""></li>
@@ -134,7 +253,7 @@
 			<img src="img/Block_3/garantii.png" alt="">
 		</div>
 	</section>
-	<section class="questions">
+	<section class="questions" id="social">
 		<div class="questions-box">
 			<div class="questions-box-1">
 				<h2>/Как задать вопрос?</h2>
@@ -158,7 +277,7 @@
 		</div>
 	</section>
 
-	<section class="comments">
+	<section class="comments" id="comments">
 		<h2>Пишите о нас на флампе</h2>
 		<div class="comments-widget">
 			<a class="flamp-widget" href="//kemerovo.flamp.ru/firm/avtostok_magazin_dlya_nemeckikh_francuzskikh_i_amerikanskikh_avtomobilejj-70000001027181227"  data-flamp-widget-type="responsive-new" data-flamp-widget-id="70000001027181227" data-flamp-widget-width="100%" data-flamp-widget-count="1">Отзывы о нас на Флампе</a><script>!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script");</script>
@@ -166,27 +285,64 @@
 	</section>
 	
 	<section class="map">
-		<script class="mapik" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06525da431e2f56851af0ca69f09453633c726372cc49ad8adbc80ced9e3dbca&amp;width=100%25&amp;height=490&amp;lang=ru_RU&amp;scroll=falce"></script>
+		<script class="mapik" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06525da431e2f56851af0ca69f09453633c726372cc49ad8adbc80ced9e3dbca&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 	</section>
 
-	<footer class="main-foot">
+	<!-- Modal Callback -->
+	<div class="callback-btn">
+		<a href="/"  data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+	</div>
+
+		<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Кузовные запчасти</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		         <div class="callback-form" style="margin: 0 auto;">
+							<form>
+								<label for="user_name">ФИО</label>
+								<input type="text" id="user_name" name="user_name" required/>
+								<label for="user_phone">Ваш номер</label>
+								<input type="tel" id="user_phone" name="user_phone" required/>
+								<label for="user_vin">VIN номер кузова</label>
+								<input type="text" id="user_vin" name="user_vin" required/>
+								<input type="submit" class="submit-btn">
+							</form>
+						</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	<footer class="main-foot" id="contacts">
 		<div class="main-foot_logo">
 			<a href="/"><img src="img/Footer.png" alt=""></a>
 		</div>
 		<div class="main-foot_requisites">
-			 <p>Ниши Реквизиты:</p>
-	      <p>ИП Богачев Роман Алексеевич</p>
-	      <p>ГРНИП: 317420500027952 от 07.04.2017</p>
-	      <p>ИНН: 420540432961</p>
-	      <p>ОГРНИП: 317420500027952</p>
-	      <p>Поставлен на учет от 07.04.2017</p>
+			 <div class="main-foot_requisites-left">
+				 	<p>Ниши Реквизиты:</p>
+				 	<p>ИП Богачев Роман Алексеевич</p>
+				  <p>ГРНИП: 317420500027952 от 07.04.2017</p>
+			 </div>
+	     <div class="main-foot_requisites-right">
+	     	<p>ИНН: 420540432961</p>
+	     	<p>ОГРНИП: 317420500027952</p>
+	     	<p>Поставлен на учет от 07.04.2017</p>
+	     </div>
 		</div>
 		<div class="main-foot_social">
 			<a href="https://www.instagram.com/r.b.auto/" target='_blank'><i class="fab fa-instagram" aria-hidden="true"></i></a>
 			<a href="viber://pa/info?uri=<+79996496827>" target='_blank'><i class="fab fa-viber" aria-hidden="true"></i></a>
 			<a href="https://vk.com/rbautorus" target='_blank'><i class="fab fa-vk" aria-hidden="true"></i></a>
+			<a href="/" target='_blank'><i class="fab fa-whatsapp"></i></a>
 		</div>
 	</footer>
+
 	
 	<script src="js/scripts.min.js"></script>
 
