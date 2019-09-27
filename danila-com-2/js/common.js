@@ -1,5 +1,7 @@
 $(function() {
 
-	// Custom JS
+	setTimeout(function(){
+		$('.modal').modal('show');
+	}, 20000);
 
 });
